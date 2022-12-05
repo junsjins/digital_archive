@@ -19,8 +19,8 @@
 	--font14: 14px;
 	--font13: 13px;
 	/*font-family*/
-	--noto: "Noto Sans KR", sans-serif;
-	--gowun: "Gowun Dodum", sans-serif;
-	--Gangwon: "GangwonEdu_OTFBoldA";
-	--Teko:"Teko", sans-serif;
+	--gMark: "GS", sans-serif;
+	--sunBatang: "SB", sans-serif;
+	--Nanum: "NS";
+	--thai:"thai", sans-serif;
 }
