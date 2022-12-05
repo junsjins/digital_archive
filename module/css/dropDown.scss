@@ -40,6 +40,7 @@
         flex: 1 1 auto;
         outline: none;
         cursor: pointer;
+        color: rgba(var(--white), 1)    ;
 
         &::placeholder {
             transition: .15s all ease-out;
@@ -83,9 +84,9 @@
     //     border-color: rgba(var(--black), .3);
     // }
 
-    // &:focus-within {
-    //     border-color: rgba(var(--black), .3);
-    // }
+    &:focus-within {
+        border-color: rgba(var(--white), .3);
+    }
 
     &:has(:invalid) {
         border-color: rgba(var(--black), .3);

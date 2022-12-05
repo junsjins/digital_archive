@@ -32,6 +32,7 @@
 	flex: 1 1 auto;
 	outline: none;
 	cursor: pointer;
+	color: rgba(var(--white), 1);
 }
 [data-input-common] > input::-moz-placeholder {
 	-moz-transition: 0.15s all ease-out;
@@ -76,6 +77,9 @@
 	font-size: 0.9rem;
 	color: rgba(var(--white), 0.9);
 	cursor: pointer;
+}
+[data-input-common]:focus-within {
+	border-color: rgba(var(--white), 0.3);
 }
 [data-input-common]:has(:invalid) {
 	border-color: rgba(var(--black), 0.3);
