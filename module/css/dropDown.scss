@@ -85,7 +85,7 @@
     // }
 
     &:focus-within {
-        border-color: rgba(var(--white), .3);
+        border-color: rgba(var(--white), 1);
     }
 
     &:has(:invalid) {
