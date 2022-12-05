@@ -1,3 +1,4 @@
+/*dropDown.css*/
 .remix{
     display: block;
     width: 1em;
@@ -160,7 +161,7 @@
         }
 
         &.chosen {
-            background-color: rgba(var(--white), 1);
+            background-color: rgba(var(--white), .6);
             color: rgba(var(--black), 1);
             font-weight: 900;
         }

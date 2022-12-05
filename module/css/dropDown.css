@@ -1,3 +1,4 @@
+/*dropDown.css*/
 .remix {
 	display: block;
 	width: 1em;
@@ -145,7 +146,7 @@
 	opacity: 0.9;
 }
 .dropdown-list > .dropdown-items.chosen {
-	background-color: rgba(var(--white), 1);
+	background-color: rgba(var(--white), 0.6);
 	color: rgba(var(--black), 1);
 	font-weight: 900;
 }
