@@ -1,0 +1,47 @@
+// SASS Variables
+
+// light theme colors
+:root[data-theme="light"] {
+
+
+}
+
+// dark theme colors
+:root[data-theme="dark"] {
+
+}
+
+:root {
+
+    // rgba(var(--skyblue),05); 사용법
+
+    /* color */
+    --black: 0, 0, 0;
+    --white: 255, 255, 255;
+    --royalblue: 0, 40, 85;
+    --rad: 230, 10, 25;
+    --marineblue: 0, 51, 108;
+    --coral: 190, 80, 25;
+
+    /* size */
+    --font110: 110px;
+    --font36: 36px;
+    --font28: 28px;
+    --font26: 26px;
+    --font24: 24px;
+    --font22: 22px;
+    --font20: 20px;
+    --font18: 18px;
+    --font16: 16px;
+    --font14: 14px;
+    --font13: 13px;
+
+    /*font-family*/
+    --noto: 'Noto Sans KR', sans-serif;
+    --gowun: 'Gowun Dodum', sans-serif;
+    --Gangwon: 'GangwonEdu_OTFBoldA';
+    --Teko:'Teko', sans-serif;
+
+   
+
+}
