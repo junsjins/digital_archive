@@ -1,0 +1,97 @@
+:root {
+    box-sizing: border-box;
+    font-size: 20px;
+    line-height: 1;
+    user-select: none;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    min-width: 0;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+       -moz-tap-highlight-color: transparent;
+}
+
+body {
+    font-size: .8rem;
+    text-rendering: optimizeSpeed;
+    overflow-x: hidden;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+header,
+footer,
+hgroup,
+main,
+nav,
+section,
+summary {
+    display: block;
+}
+
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+img,
+picture {
+    display: block;
+    max-width: 100%;
+    border: none;
+    object-fit: cover;
+    -webkit-user-drag: none;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+form,
+fieldset {
+    border: none;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+}
+
+button,
+input,
+textarea,
+select,
+optgroup {
+    border: none;
+    background: none;
+    font: inherit;
+    vertical-align: middle;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+}
+
+hr {
+    clear: both;
+    border: none;
+    background-color: currentColor;
+}
+
+dialog {
+    border: none;
+    outline: none;
+}
