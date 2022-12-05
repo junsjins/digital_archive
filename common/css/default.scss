@@ -3,3 +3,66 @@
     margin:0 auto;
     display:flex;
 }
+
+
+@font-face {
+    font-family: "thai";
+    src: url("/common/font/AdobeThai-Regular.otf") format("opentype");
+  }
+  
+  /* 나눔스퀘어 */
+  
+  @font-face {
+    font-family: "NS-R";
+    src: url("/common/font/NanumSquare_acR.ttf") format("truetype");
+  }
+  @font-face {
+    font-family: "NS-L";
+    src: url("/common/font/NanumSquare_acL.ttf") format("truetype");
+  }
+  @font-face {
+    font-family: "NS-B";
+    src: url("/common/font/NanumSquare_acB.ttf") format("truetype");
+  }
+  @font-face {
+    font-family: "NS-EB";
+    src: url("/common/font/NanumSquare_acEB.ttf") format("truetype");
+  }
+  
+  /* 순바탕 */
+  
+  @font-face {
+    font-family: "SB-M";
+    src: url("/common/font/SunBatang-Medium.ttf") format("truetype");
+  }
+
+  @font-face {
+    font-family: "SB-B";
+    src: url("/common/font/SunBatang-Bold.ttf") format("truetype");
+  }
+
+  @font-face {
+    font-family: "SB-L";
+    src: url("/common/font/SunBatang-Light.ttf") format("truetype");
+  }
+
+  /* 지마켓 Sans */
+
+  @font-face {
+    font-family: "GS-M";
+    src: url("/common/font/GmarketSansTTFMedium.ttf") format("truetype");
+  }
+
+  @font-face {
+    font-family: "GS-L";
+    src: url("/common/font/GmarketSansTTFLight.ttf") format("truetype");
+  }
+
+  @font-face {
+    font-family: "GS-B";
+    src: url("/common/font/GmarketSansTTFBold.ttf") format("truetype");
+  }
+
+body{
+    font-family:'NS-R';
+}
