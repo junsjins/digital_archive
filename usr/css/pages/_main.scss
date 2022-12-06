@@ -292,25 +292,25 @@
         grid-template-columns:1fr 1fr;
         grid-gap:1rem;
         > ul{
-            padding:1.5rem 2.2rem;
+            padding:2rem 2.2rem;
             display:flex;
             flex-direction:column;
-            background-image:radial-gradient(rgba(var(--coral),0) 5%, rgba(var(--coral),.85) 5%, rgba(var(--coral),.85) 100%);
-            background-position:-11rem -7rem;
+            background-image:radial-gradient(rgba(var(--coral),0) 5%, rgba(var(--coral),.9) 5%, rgba(var(--coral),.9) 100%);
+            background-position:-11rem -6.5rem;
             &:nth-child(1), &:nth-child(4){
-                background-image:radial-gradient(rgba(var(--coral),0) 5%, rgba(var(--coral),.45) 5%, rgba(var(--coral),.45) 100%);
+                background-image:radial-gradient(rgba(var(--opcoral),0) 5%, rgba(var(--opcoral),.82) 5%, rgba(var(--opcoral),.82) 100%);
             }
             li{
                 font-family:var(--gMark);
                 font-size:var(--font22);
-                height:2rem;
-                padding: 1.25rem 0;
+                padding: .5rem 0;
                 &:first-child{
                     color:rgba(var(--white),1);
                     border-bottom:1px solid rgba(var(--white),1);
                     font-size:var(--font24);
                     margin-bottom:1.5rem;
                     height: auto;
+                    padding: 0.5rem 0 1rem;
                 }
             }
         }
