@@ -1,73 +1,73 @@
 @charset "UTF-8";
 .web-common-inner {
-  max-width: 1280px;
-  margin: 0 auto;
-  display: flex;
+	max-width: 1280px;
+	margin: 0 auto;
+	display: flex;
 }
 
 @font-face {
-  font-family: "thai";
-  font-weight: normal;
-  src: url("/common/font/AdobeThai-Regular.otf") format("opentype");
+	font-family: "thai";
+	font-weight: normal;
+	src: url("/common/font/AdobeThai-Regular.otf") format("opentype");
 }
 /* 나눔스퀘어 */
 @font-face {
-  font-family: "NS";
-  font-weight: normal;
-  src: url("/common/font/NanumSquare_acR.ttf") format("truetype");
+	font-family: "NS";
+	font-weight: normal;
+	src: url("/common/font/NanumSquare_acR.ttf") format("truetype");
 }
 @font-face {
-  font-family: "NS";
-  font-weight: 100;
-  src: url("/common/font/NanumSquare_acL.ttf") format("truetype");
+	font-family: "NS";
+	font-weight: 100;
+	src: url("/common/font/NanumSquare_acL.ttf") format("truetype");
 }
 @font-face {
-  font-family: "NS";
-  font-weight: bold;
-  src: url("/common/font/NanumSquare_acB.ttf") format("truetype");
+	font-family: "NS";
+	font-weight: bold;
+	src: url("/common/font/NanumSquare_acB.ttf") format("truetype");
 }
 @font-face {
-  font-family: "NS";
-  font-weight: 900;
-  src: url("/common/font/NanumSquare_acEB.ttf") format("truetype");
+	font-family: "NS";
+	font-weight: 900;
+	src: url("/common/font/NanumSquare_acEB.ttf") format("truetype");
 }
 /* 순바탕 */
 @font-face {
-  font-family: "SB";
-  font-weight: normal;
-  src: url("/common/font/SunBatang-Medium.ttf") format("truetype");
+	font-family: "SB";
+	font-weight: normal;
+	src: url("/common/font/SunBatang-Medium.ttf") format("truetype");
 }
 @font-face {
-  font-family: "SB";
-  font-weight: bold;
-  src: url("/common/font/SunBatang-Bold.ttf") format("truetype");
+	font-family: "SB";
+	font-weight: bold;
+	src: url("/common/font/SunBatang-Bold.ttf") format("truetype");
 }
 @font-face {
-  font-family: "SB";
-  font-weight: 100;
-  src: url("/common/font/SunBatang-Light.ttf") format("truetype");
+	font-family: "SB";
+	font-weight: 100;
+	src: url("/common/font/SunBatang-Light.ttf") format("truetype");
 }
 /* 지마켓 Sans */
 @font-face {
-  font-family: "GS";
-  font-weight: normal;
-  src: url("/common/font/GmarketSansTTFMedium.ttf") format("truetype");
+	font-family: "GS";
+	font-weight: normal;
+	src: url("/common/font/GmarketSansTTFMedium.ttf") format("truetype");
 }
 @font-face {
-  font-family: "GS";
-  font-weight: 100;
-  src: url("/common/font/GmarketSansTTFLight.ttf") format("truetype");
+	font-family: "GS";
+	font-weight: 100;
+	src: url("/common/font/GmarketSansTTFLight.ttf") format("truetype");
 }
 @font-face {
-  font-family: "GS";
-  font-weight: bold;
-  src: url("/common/font/GmarketSansTTFBold.ttf") format("truetype");
+	font-family: "GS";
+	font-weight: bold;
+	src: url("/common/font/GmarketSansTTFBold.ttf") format("truetype");
 }
 body {
-  font-family: "NS";
-  font-weight: normal;
+	font-family: "NS";
+	font-weight: normal;
 }
 
 button {
-  cursor: pointer;
+	cursor: pointer;
 }
