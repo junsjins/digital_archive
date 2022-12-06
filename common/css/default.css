@@ -94,6 +94,6 @@ button {
 .Square_btnStyle {
 	background-color: rgba(var(--royalblue), 1);
 	color: rgba(var(--white), 1);
-	border-radius: 0.5rem;
+	border-radius: 0.25rem;
 	padding: 0.8rem;
 }
