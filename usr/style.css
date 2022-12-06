@@ -479,7 +479,7 @@ header {
   padding: 0.3rem 1.2rem;
 }
 #headerTop .hd-language-select {
-  padding: 0.3rem 1rem 0.3rem 0.5rem;
+  padding: 0.3rem 1.2rem 0.2rem 0.7rem;
   background: rgba(var(--marineblue), 1);
   color: rgba(var(--white), 1);
   font-size: var(--font13);
