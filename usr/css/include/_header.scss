@@ -1,6 +1,6 @@
 header{
     width:100%;
-    
+    position:relative;
 }
 #headerTop{
     height:5rem;
@@ -65,7 +65,8 @@ nav{
     width:100%;
     height:5rem;
     background:rgba(var(--marineblue),.8);
-    position:relative;
+    position: absolute;
+    bottom: -5rem;
     > div{
         display: grid !important;
         align-items: center;
