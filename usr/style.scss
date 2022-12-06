@@ -1,9 +1,11 @@
 
 //pages
 @import
-    'css/pages/main.scss';
+    'css/pages/main.scss',
+    'css/pages/digital.scss';
 
     
 //include
 @import
-    'css/include/header.scss'
+    'css/include/header.scss',
+    'css/include/totalSearch.scss';

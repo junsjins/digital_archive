@@ -50,57 +50,6 @@ function totalSearch(element, filterArray, topSearchedArray, seachType) {
         topSearchedList.appendChild(newTextRow);
     });
 
-    function setAsValue(seachType) {
-        let searchCategory = filterCategory.value;
-        let searchString = searchInput.value;
-
-        inputCategory.value = searchCategory;
-        inputText.value = searchString;
-
-        document.getElementById(seachType + 'ListContainer').innerHTML = '';
-        setItem('prodState', 'start');
-        setItem(`${seachType}__scrollHeight`, 0); //무한 스크롤시 사용
-
-        switch(seachType){
-            case 'edu' :
-            setItem(seachType,0);
-            prodList(seachType, 8);
-            break;
-
-            case 'center' :
-            setItem(seachType,0);
-            prodList(seachType, 8);
-            break;
-
-            case 'prod' :
-            setItem(seachType,0);
-            prodList(seachType, 8);
-            break;
-
-            case 'fun' :
-            setItem(seachType,0);
-            prodList(seachType, 8);
-            break;
-        }
-
-        return searchString;
-    }
 }
 
 // select에 option 추가하는 내용 추가 필요
-
-// 모듈 - 뜨는 검색어 팁 슬라이더
-
-const tipsSliderEl = document.getElementById('tipsSlider');
-const tipsSlider = new Swiper(tipsSliderEl, {
-    direction: 'vertical',
-    slideClass: 'tips-item',
-    slidesPerView: 2,
-    spaceBetween: 10,
-    loop: true,
-    autoplay: {
-        delay: 3000,
-        disableOnInteraction: false,
-        pauseOnMouseEnter: true
-    }
-});
