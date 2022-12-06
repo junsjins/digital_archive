@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="usr/style.css">
 
     <script src="/common/js/jquery-3.6.0.js"></script>
+    <script src="/usr/js/header.js" defer></script>
     <script src="/module/js/extraDropDown.js" defer></script> <!--dropDowm-->
     <title>::조선통신사 디지털아카이브::</title>
 </head>
@@ -25,16 +26,40 @@
                 <span>디지털 아카이브</span>
             </p>
         </div>
+        <div class="hd-search-bar">
+            <input type="text" placeholder="검색어를 입력하세요.">
+            <button>찾아보기</button>
+        </div>
+        <a class="hd-outer-link" href="">부산문화재단</a>
+        <a class="hd-outer-link" href="">조선통신사문화교류사업</a>
+        <select class="hd-language-select">
+            <option value="lang-kor">KOR</option>
+            <option value="lang-eng">ENG</option>
+            <option value="lang-jap">JAP</option>
+        </select>
     </section>
     <nav>
-        <div class="web-common-inner">
+        <div class="web-inner-depth">
             <a href="">아카이브 소개</a>
             <a href="">기록물 검색</a>
             <a href="">분류별 기록물</a>
             <a href="">디지털 소장자료</a>
-            <a href="">가상전시관</a>    
+            <a href="">가상전시관</a>   
         </div>
+        <section id="subNav" class="hd-subNav-hidden">
+            <div class="web-inner-depth">
+                <ul>
+                    <li><a href="">아카이브 안내</a></li>
+                    <li><a href="">자료이용 안내</a></li>
+                </ul>
+                <a href="">기록물 검색</a>
+                <a href="">분류별 기록물</a>
+                <a href="">디지털 소장자료</a>
+                <a href="">가상전시관</a>    
+            </div>
+        </section>
     </nav>
+    
 </header>
 
 <body>

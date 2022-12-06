@@ -5,13 +5,26 @@ header{
 #headerTop{
     height:5rem;
     background:rgba(var(--white),1);
+    align-items: center;
+    justify-content:flex-end;
+    gap:2rem;
     > div{
         display:flex;
     }
+    > a{
+        &.hd-outer-link{
+            color:rgba(var(--marineblue),1);
+            font-size:var(--font16);
+            font-weight:bold;
+        }
+    }
     .hd-logo-div{
-        gap:1rem;
+        align-items:center;
+        gap:.5rem;
+        margin:0 auto 0 3rem;
         img{
-            width:2rem;
+            width:2.2rem;
+            object-fit: contain;
         }
         p{
             display:flex;
@@ -19,23 +32,89 @@ header{
             justify-content:start;
             color:rgba(var(--marineblue),1);
             font-size:var(--font18);
-            font-weight:bold;
+            font-weight:900;
         }
+    }
+    .hd-search-bar{
+        border:1px solid rgba(var(--black),.5);
+        height: fit-content;
+        border-radius:2rem;
+        input{
+            outline:0;
+            border:none;
+            padding:.8rem 1.2rem;
+            width:18rem;
+        }
+        button{
+            outline:0;
+            border:none;
+            font-size:var(--font13);
+            padding:.3rem 1.2rem;
+        }
+    }
+    .hd-language-select{
+        padding:.3rem 1rem .3rem .5rem;
+        background:rgba(var(--marineblue),1);
+        color:rgba(var(--white),1);
+        font-size:var(--font13);
+        border-radius:1rem;
+
     }
 }
 nav{
     width:100%;
     height:5rem;
     background:rgba(var(--marineblue),.8);
+    position:relative;
     > div{
-        display:flex;
-        align-items:center;
-        justify-content:center;
+        display: grid !important;
+        align-items: center;
+        grid-template-columns: repeat(6, 1fr);
         height: inherit;
+        width: 100%;
+    }
+    a{
+        color:#fff;
+        font-size:var(--font22);
+        font-weight:bold;
+        text-align: center;
+        line-height:5rem;
+    }
+}
+#subNav{
+    position:absolute;
+    bottom:-5rem;
+    left:0;
+    width:100%;
+    height:5rem;
+    background:rgba(var(--black),7);
+    padding-top:1rem;
+    > div{
+        display:grid;
+        grid-template-columns: repeat(6, 1fr);
+        ul{
+            display:flex;
+            flex-direction:column;
+            justify-content: center;
+            margin:0 auto;
+            width: 100%;
+        }
         a{
-            color:#fff;
-            font-size:var(--font22);
-            font-weight:bold;
+            color:rgba(var(--white),1);
+            text-align: center;
+            width: 100%;
+            display: block;
+            line-height:1.75;
+            font-size:var(--font16);
         }
     }
+    
+}
+
+.hd-subNav-hidden{
+    display:none;
+}
+
+.hd-subNav-show{
+    display:block;
 }
