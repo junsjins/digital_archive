@@ -384,11 +384,17 @@
 #login-page {
   width: 22.5rem;
   margin: 0 auto;
+  min-height: 100vh;
   display: grid;
   place-items: center;
-  height: inherit;
   padding: 1rem;
-  background-color: #f1f1f1;
+}
+
+#login-page-inner {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .login-title-img {
@@ -398,10 +404,10 @@
   margin-bottom: 2rem;
 }
 .login-title-img img {
-  width: 2rem;
+  width: 2.2rem;
 }
 .login-title-img p {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   color: rgba(var(--royalblue), 1);
   font-weight: 900;
 }
@@ -417,8 +423,47 @@
   border-color: rgba(var(--royalblue), 0.3);
   box-shadow: 0 0 0 0.1rem rgba(var(--royalblue), 0.1);
 }
+.login-form-text input::-moz-placeholder {
+  color: rgba(var(--black), 0.4);
+}
+.login-form-text input:-ms-input-placeholder {
+  color: rgba(var(--black), 0.4);
+}
+.login-form-text input::placeholder {
+  color: rgba(var(--black), 0.4);
+}
 .login-form-text input + input {
   margin-top: 0.5rem;
+}
+.login-form-text button {
+  width: 100%;
+  margin-top: 2rem;
+  font-weight: bold;
+}
+
+.chkbox-keeplog {
+  align-self: flex-start;
+  margin-top: 1.5rem;
+}
+
+.login-Find-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  border: 1px solid rgba(var(--black), 0.1);
+  padding: 0.85rem;
+  width: 100%;
+  margin-top: 3rem;
+}
+.login-Find-btn p {
+  cursor: pointer;
+  color: rgba(var(--black), 0.5);
+}
+.login-Find-btn hr {
+  height: 0.5rem;
+  width: 0.05rem;
+  background-color: rgba(var(--black), 0.1);
 }
 
 header {
@@ -808,4 +853,36 @@ nav a {
   background: url(/common/img/arr_right.svg) no-repeat;
   background-size: contain;
   right: 1.5rem;
+}
+
+/* custom_checkbox.css */
+[data-input-chkbox] > input[type=checkbox] {
+  display: none;
+}
+
+[data-input-chkbox] > input[type=checkbox]:checked + label {
+  color: rgba(var(--black), 0.5);
+}
+
+[data-input-chkbox] > input[type=checkbox] + label {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  color: rgba(var(--black), 0.5);
+  cursor: pointer;
+}
+
+[data-input-chkbox] > input[type=checkbox] + label > [data-check-icon] {
+  display: grid;
+  place-items: center;
+  width: 1rem;
+  height: 1rem;
+  border: 0.5px solid rgba(var(--black), 0.1);
+  border-radius: 50%;
+  font-size: 0.8rem;
+}
+
+[data-input-chkbox] > input[type=checkbox]:checked + label > [data-check-icon] {
+  background-color: rgba(var(--royalblue), 1);
+  color: rgba(var(--white), 1);
 }

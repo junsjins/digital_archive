@@ -1,0 +1,39 @@
+
+/* custom_checkbox.css */
+
+[data-input-chkbox] > input[type=checkbox] {
+    display: none;
+}
+
+//클릭시 글자 컬러 변경 여부
+[data-input-chkbox] > input[type=checkbox]:checked + label {
+    color: rgba(var(--black), .5);
+    // font-weight: bold;
+}
+
+// 클릭전 글자 상태
+[data-input-chkbox] > input[type=checkbox] + label {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    color: rgba(var(--black), .5);
+    cursor: pointer;
+}
+
+//체크박스 svg 사이즈 
+[data-input-chkbox] > input[type=checkbox] + label > [data-check-icon] {
+    display: grid;
+    place-items: center;
+    width: 1rem;
+    height: 1rem;
+    border: 0.5px solid rgba(var(--black), .1);
+    border-radius: 50%;
+    font-size: 0.8rem;
+}
+
+//클릭시 컬러 변경
+[data-input-chkbox] > input[type=checkbox]:checked + label > [data-check-icon] {
+    background-color: rgba(var(--royalblue), 1);
+    color: rgba(var(--white), 1);
+
+}
