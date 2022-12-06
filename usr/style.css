@@ -827,6 +827,7 @@ nav a {
   font-size: var(--font22);
   width: 7rem;
   text-align: center;
+  letter-spacing: 2px;
 }
 #btmSlider .web-common-inner .common-slider-container {
   max-width: 1140px;
@@ -837,17 +838,32 @@ nav a {
   width: 100%;
   overflow: hidden;
 }
+#btmSlider .web-common-inner .common-slider-container .common-bottom-slider .swiper-wrapper {
+  display: flex;
+  align-items: center;
+}
+#btmSlider .web-common-inner .common-slider-container .common-bottom-slider .swiper-wrapper img {
+  height: 1.5rem;
+  margin: 0 auto;
+}
+#btmSlider .web-common-inner .common-slider-container .common-bottom-slider .swiper-wrapper img.common-slideimg-height {
+  height: 3rem;
+}
+#btmSlider .web-common-inner .common-slider-container .common-bottom-slider .swiper-wrapper img.common-slideimg-height02 {
+  height: 1.75rem;
+}
 #btmSlider .web-common-inner .common-slider-container .common-bottom-slider .swiper-button-prev, #btmSlider .web-common-inner .common-slider-container .common-bottom-slider .swiper-button-next {
   width: 1.25rem;
   height: 1.25rem;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+  cursor: pointer;
 }
 #btmSlider .web-common-inner .common-slider-container .common-bottom-slider .swiper-button-prev {
   background: url(/common/img/arr_left.svg) no-repeat;
   background-size: contain;
-  left: 1.5rem;
+  left: 2rem;
 }
 #btmSlider .web-common-inner .common-slider-container .common-bottom-slider .swiper-button-next {
   background: url(/common/img/arr_right.svg) no-repeat;
