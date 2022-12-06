@@ -764,3 +764,48 @@ nav a {
 .ago-search-box ul li svg {
   cursor: pointer;
 }
+
+#btmSlider {
+  height: 5.5rem;
+  width: 100%;
+  border-top: 1px solid rgba(var(--black), 0.5);
+  border-bottom: 1px solid rgba(var(--black), 0.5);
+  display: flex;
+}
+#btmSlider .web-common-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#btmSlider .web-common-inner h2 {
+  flex-shrink: 0;
+  font-size: var(--font22);
+  width: 7rem;
+  text-align: center;
+}
+#btmSlider .web-common-inner .common-slider-container {
+  max-width: 1140px;
+  padding: 0 5rem;
+  position: relative;
+}
+#btmSlider .web-common-inner .common-slider-container .common-bottom-slider {
+  width: 100%;
+  overflow: hidden;
+}
+#btmSlider .web-common-inner .common-slider-container .common-bottom-slider .swiper-button-prev, #btmSlider .web-common-inner .common-slider-container .common-bottom-slider .swiper-button-next {
+  width: 1.25rem;
+  height: 1.25rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+#btmSlider .web-common-inner .common-slider-container .common-bottom-slider .swiper-button-prev {
+  background: url(/common/img/arr_left.svg) no-repeat;
+  background-size: contain;
+  left: 1.5rem;
+}
+#btmSlider .web-common-inner .common-slider-container .common-bottom-slider .swiper-button-next {
+  background: url(/common/img/arr_right.svg) no-repeat;
+  background-size: contain;
+  right: 1.5rem;
+}
