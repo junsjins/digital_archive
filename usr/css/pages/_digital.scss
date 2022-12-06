@@ -100,12 +100,9 @@
             color: rgba(var(--black), .65);
         }
     }
-}
 
-
-
-
-.round_btnStyle{
-    width: 11.25rem;
-    margin-top: 2.5rem;
+    button{
+        width: 11.25rem;
+        margin-top: 2.5rem; 
+    }
 }
