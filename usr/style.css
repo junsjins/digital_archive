@@ -376,22 +376,50 @@
 	color: rgba(var(--black), 0.65);
 }
 
-.btnStyle {
+.round_btnStyle {
 	width: 11.25rem;
-	height: 2.5rem;
-	background-color: rgba(var(--royalblue), 1);
-	color: rgba(var(--white), 1);
-	border-radius: 25rem;
 	margin-top: 2.5rem;
 }
 
 /*login.css*/
 #login-page {
-	width: 20.5rem;
+	width: 22.5rem;
 	margin: 0 auto;
 	display: grid;
 	place-items: center;
 	height: inherit;
+	padding: 1rem;
+	background-color: #f1f1f1;
+}
+
+.login-title-img {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+	margin-bottom: 2rem;
+}
+.login-title-img img {
+	width: 2rem;
+}
+.login-title-img p {
+	font-size: 1.1rem;
+	color: rgba(var(--royalblue), 1);
+	font-weight: 900;
+}
+
+.login-form-text input {
+	width: 100%;
+	border: 1px solid rgba(var(--black), 0.1);
+	background-color: rgba(var(--white), 0.9);
+	padding: 0.75rem;
+	outline: 0;
+}
+.login-form-text input:focus-within {
+	border-color: rgba(var(--royalblue), 0.3);
+	box-shadow: 0 0 0 0.1rem rgba(var(--royalblue), 0.1);
+}
+.login-form-text input + input {
+	margin-top: 0.5rem;
 }
 
 header {

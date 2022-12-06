@@ -94,3 +94,22 @@ button{
   width: 100%;
   height: auto;
 }
+
+//btn style
+
+.round_btnStyle{
+  background-color: rgba(var(--royalblue), 1);
+  color: rgba(var(--white), 1);
+  border-radius: 25rem;
+  padding: .8rem;
+  
+}
+
+.Square_btnStyle{
+
+  background-color: rgba(var(--royalblue), 1);
+  color: rgba(var(--white), 1);
+  border-radius: .5rem;
+  padding: .8rem;
+
+}
