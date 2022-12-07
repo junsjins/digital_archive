@@ -20,8 +20,7 @@
 	--font14: .7rem;
 	--font13: .65rem;
 	/*font-family*/
-	--gMark: "GS", sans-serif;
-	--sunBatang: "SB", sans-serif;
-	--Nanum: "NS";
-	--thai:"thai", sans-serif;
+	--NG: "NG", sans-serif;
+	--NM: "NM", sans-serif;
+	--BN: "BN";
 }
