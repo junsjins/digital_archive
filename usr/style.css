@@ -37,6 +37,7 @@
   align-items: center;
   gap: 1rem;
   color: rgba(var(--white), 1);
+  margin-top: 13rem;
 }
 #mainSearch .main-search-title img {
   width: 3rem;
@@ -46,90 +47,67 @@
 }
 #mainSearch .main-search-bar {
   width: 700px;
-  background: rgba(var(--white), 0.75);
-  padding: 1rem;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 6rem;
+  border: 0.3rem solid rgba(var(--white), 1);
+  border-radius: 2rem;
 }
 #mainSearch .main-search-bar input {
   background: rgba(var(--white), 1);
-  flex-basis: 75%;
-  padding: 0.8rem;
+  padding: 1rem;
   outline: 0;
+  border-radius: 1rem 0 0 1rem;
 }
 #mainSearch .main-search-bar button {
   background: rgba(var(--marineblue), 1);
   color: rgba(var(--white), 1);
-  flex-basis: 25%;
   padding: 0.8rem;
   cursor: pointer;
+  border-radius: 0 2rem 2rem 0;
 }
 
 /* 메인화면_소개영역 */
 #mainIntro {
   background: url(/common/img/back_cloud.jpg);
   background-size: cover;
-  -webkit-clip-path: polygon(0% 15%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 100% 15%, 100% 85%, 100% 100%, 85% 100%, 15% 100%, 0 100%, 0% 85%);
-          clip-path: polygon(0% 15%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 100% 15%, 100% 85%, 100% 100%, 85% 100%, 15% 100%, 0 100%, 0% 85%);
-  top: -5rem;
   position: relative;
   z-index: 1;
 }
-
-/* 소개(디지털 아카이브, 유네스코 등재) */
-#mainIntroInner {
-  justify-content: center;
+#mainIntro #mainIntroInner {
+  background: url(/common/img/main_red_cloud.jpg);
+  background-size: 150%;
+  top: -5rem;
+  position: relative;
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
-#mainIntroInner > div {
+#mainIntro #mainIntroInner > div {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 50%;
+  padding: 3.5rem 0;
 }
-#mainIntroInner > div .main-introimg-div {
-  width: 50%;
-  height: 13.5rem;
+#mainIntro #mainIntroInner > div h2 {
+  margin-bottom: 1.5rem;
+  color: rgba(var(--white), 1);
+  font-family: "NM";
+  font-weight: bold;
+  font-size: 1.5rem;
 }
-#mainIntroInner > div .main-introimg-div img {
-  height: 5rem;
-  margin: 5rem auto 2.5rem;
-}
-#mainIntroInner > div p {
-  color: rgba(var(--black), 0.75);
+#mainIntro #mainIntroInner > div p {
+  color: rgba(var(--white), 1);
   line-height: 1.6;
   font-size: var(--font20);
 }
-#mainIntroInner > div.vt-line {
+#mainIntro #mainIntroInner > div.vt-line {
   width: 2px;
-  height: 21rem;
-  background: rgba(var(--royalblue), 1);
-  margin: 5rem 0 8rem;
-}
-#mainIntroInner .main-intro-left h2 {
-  color: #002855;
-  font-size: var(--font42);
-  font-weight: 900;
-}
-#mainIntroInner .main-intro-left h2 span {
-  color: #e60a19;
-}
-#mainIntroInner .main-intro-left p.main-intro-subT {
-  font-family: var(--Nanum);
-  margin: 1rem 0 1.5rem;
-  font-weight: 900;
-  font-size: var(--font18);
-  letter-spacing: 3px;
-}
-#mainIntroInner .main-intro-right h2 {
-  color: #1e6794;
-  font-size: var(--font42);
-  font-family: "thai";
-}
-#mainIntroInner .main-intro-right p.main-intro-subT {
-  color: #7f7f7f;
-  margin: 3rem 0 0.75rem;
+  height: 8.5rem;
+  background: rgba(var(--white), 0.5);
 }
 
+/* 소개(디지털 아카이브, 유네스코 등재) */
 /* 디지털 소장자료 */
 #mainCollection {
   width: 100%;
