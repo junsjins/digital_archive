@@ -10,7 +10,6 @@
   display:flex;
 }
 /* 고딕체 - 나눔바른고딕 */
-
 @font-face {
   font-family: "NG";
   font-weight: normal;
@@ -25,12 +24,17 @@
 
 @font-face {
   font-family: "NG";
-  font-weight: 300;
+  font-weight: 100;
   src: url("/common/font/NanumBarunGothicLight_0.ttf") format("truetype");
 }
 
-/* 명조체 - 나눔명조 */
+@font-face {
+  font-family: "NG";
+  font-weight: 900;
+  src: url("/common/font/NanumGothicExtraBold.ttf") format("truetype");
+}
 
+/* 명조체 - 나눔명조 */
 @font-face {
   font-family: "NM";
   font-weight: normal;
@@ -50,7 +54,6 @@
 }
 
 /* 영문폰트 - Browallia New */
-
 @font-face {
   font-family: "BN";
   font-weight: normal;
@@ -90,7 +93,6 @@ button{
 }
 
 .Square_btnStyle{
-
   background-color: rgba(var(--royalblue), 1);
   color: rgba(var(--white), 1);
   border-radius: .25rem;

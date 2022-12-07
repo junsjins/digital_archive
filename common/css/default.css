@@ -24,8 +24,13 @@
 }
 @font-face {
 	font-family: "NG";
-	font-weight: 300;
+	font-weight: 100;
 	src: url("/common/font/NanumBarunGothicLight_0.ttf") format("truetype");
+}
+@font-face {
+	font-family: "NG";
+	font-weight: 900;
+	src: url("/common/font/NanumGothicExtraBold.ttf") format("truetype");
 }
 /* 명조체 - 나눔명조 */
 @font-face {
