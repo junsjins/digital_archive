@@ -5,14 +5,12 @@
 <link rel="stylesheet" href="usr/style.css">
 
 
-<script src="/usr/js/totalSearch.js" defer></script>
-
-
 <section id="total-search-box">
     <div class="search-title-box">
         <h3 class="search-title-text">디지털 소장자료 검색</h3>
     </div>
     <!--여기만 모듈화-->
+    <script src="/usr/js/totalSearch.js" defer></script>
     <form id="totalSearch" data-prod-search>
         <select name="totSearch" id="slctFilter" data-tot-select>
             <option disabled >검색범위</option>
@@ -34,70 +32,6 @@
             </svg>
       
         </button>
-
-        <div id="topSearched">
-            <p id="searchTitle">최근 뜨는 검색어</p>
-
-            <ul id="topSearchList" data-tot-container></ul>
-
-            <div id="searchTips">
-                <div id="tipsSlider">
-                    <div class="swiper-wrapper">
-                        <div class="tips-item">
-                            <div class="tips-image">
-                                <img src="" alt="" data-tips-image>
-                            </div>
-                            <dl class="tips-text">
-                                <dd data-tips-description>, 한 방에 정리</dd>
-                                <dt data-tips-title>체험 다이빙 VS 펀 다이빙</dt>
-                            </dl>
-                        </div>
-
-                        <div class="tips-item">
-                            <div class="tips-image">
-                                <img src="" alt="" data-tips-image>
-                            </div>
-                            <dl class="tips-text">
-                                <dd data-tips-description>결제 금액이 예상과 다른 이유?</dd>
-                                <dt data-tips-title>FOC & 개별 결제, 개념 정리</dt>
-                            </dl>
-                        </div>
-
-                        <div class="tips-item">
-                            <div class="tips-image">
-                                <img src="" alt="" data-tips-image>
-                            </div>
-                            <dl class="tips-text">
-                                <dd data-tips-description>힘차게 달려가자 내일의 태양이 우릴 부른다</dd>
-                                <dt data-tips-title>케이-캅스 로봇 수사대</dt>
-                            </dl>
-                        </div>
-
-                        <div class="tips-item">
-                            <div class="tips-image">
-                                <img src="" alt="" data-tips-image>
-                            </div>
-                            <dl class="tips-text">
-                                <dd data-tips-description>승리는 우리의 것 무적의 힘에는 당할 자 없다</dd>
-                                <dt data-tips-title>나쁜 악당 문제 없다</dt>
-                            </dl>
-                        </div>
-                    </div>
-
-                    <template data-tips-template>
-                        <div class="tips-item">
-                            <div class="tips-image">
-                                <img src="" alt="" data-tips-image>
-                            </div>
-                            <dl class="tips-text">
-                                <dd data-tips-description></dd>
-                                <dt data-tips-title></dt>
-                            </dl>
-                        </div>
-                    </template> <!-- templates for .tips-item -->
-                </div>
-            </div>
-        </div>
     </form>
     <div class="ago-search-box">
         <ul><span class="Recent_searches">최근검색어</span>
