@@ -11,66 +11,51 @@
   display: flex;
 }
 
+/* 고딕체 - 나눔바른고딕 */
 @font-face {
-  font-family: "thai";
+  font-family: "NG";
   font-weight: normal;
-  src: url("/common/font/AdobeThai-Regular.otf") format("opentype");
-}
-/* 나눔스퀘어 */
-@font-face {
-  font-family: "NS";
-  font-weight: normal;
-  src: url("/common/font/NanumSquare_acR.ttf") format("truetype");
+  src: url("/common/font/NanumBarunGothic_0.ttf") format("truetype");
 }
 @font-face {
-  font-family: "NS";
-  font-weight: 100;
-  src: url("/common/font/NanumSquare_acL.ttf") format("truetype");
-}
-@font-face {
-  font-family: "NS";
+  font-family: "NG";
   font-weight: bold;
-  src: url("/common/font/NanumSquare_acB.ttf") format("truetype");
+  src: url("/common/font/NanumBarunGothicBold_0.ttf") format("truetype");
 }
 @font-face {
-  font-family: "NS";
+  font-family: "NG";
+  font-weight: 300;
+  src: url("/common/font/NanumBarunGothicLight_0.ttf") format("truetype");
+}
+/* 명조체 - 나눔명조 */
+@font-face {
+  font-family: "NM";
+  font-weight: normal;
+  src: url("/common/font/NanumMyeongjo.ttf") format("truetype");
+}
+@font-face {
+  font-family: "NM";
+  font-weight: bold;
+  src: url("/common/font/NanumMyeongjoBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "NM";
   font-weight: 900;
-  src: url("/common/font/NanumSquare_acEB.ttf") format("truetype");
+  src: url("/common/font/NanumMyeongjoExtraBold.ttf") format("truetype");
 }
-/* 순바탕 */
+/* 영문폰트 - Browallia New */
 @font-face {
-  font-family: "SB";
+  font-family: "BN";
   font-weight: normal;
-  src: url("/common/font/SunBatang-Medium.ttf") format("truetype");
+  src: url("/common/font/browa.ttf") format("truetype");
 }
 @font-face {
-  font-family: "SB";
+  font-family: "BN";
   font-weight: bold;
-  src: url("/common/font/SunBatang-Bold.ttf") format("truetype");
-}
-@font-face {
-  font-family: "SB";
-  font-weight: 100;
-  src: url("/common/font/SunBatang-Light.ttf") format("truetype");
-}
-/* 지마켓 Sans */
-@font-face {
-  font-family: "GS";
-  font-weight: normal;
-  src: url("/common/font/GmarketSansTTFMedium.ttf") format("truetype");
-}
-@font-face {
-  font-family: "GS";
-  font-weight: 100;
-  src: url("/common/font/GmarketSansTTFLight.ttf") format("truetype");
-}
-@font-face {
-  font-family: "GS";
-  font-weight: bold;
-  src: url("/common/font/GmarketSansTTFBold.ttf") format("truetype");
+  src: url("/common/font/browab.ttf") format("truetype");
 }
 body {
-  font-family: "NS";
+  font-family: "NG";
   font-weight: normal;
 }
 
