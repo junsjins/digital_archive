@@ -5,7 +5,7 @@
     background-color: rgba(var(--black), .1);
 }
 
-#subNav1 {
+#archiveSubNav {
     display: flex;
     flex-flow: row nowrap;
     gap: 0.2rem;
@@ -20,13 +20,12 @@
     width: 100%;
 }
 
-.sub-page-routes1 {
+.archive-sub-routes {
     display: grid;
     place-items: center;
-    // width: 19rem;
     height: 2.5rem;
     background-color: rgba(var(--white), 0.4);
-    color: rgba(var(--white), 0.75);
+    color: rgba(var(--black), 0.35);
     font-size: 0.8rem;
     transition: background-color 0.15s, color 0.15s;
     cursor: pointer;
@@ -48,6 +47,8 @@
     width: 1024px;
     margin: 0 auto;
 }
+
+
 //top
 .archive-top-text {
     h3 {
@@ -72,8 +73,8 @@
     flex-flow: row wrap;
     align-items: center;
     justify-content: center;
-    padding-top: 3.5rem;
-    margin-bottom: 22.5rem;
+    padding-top: 3rem;
+    margin-bottom: 15rem;
 
 
     >div {
@@ -87,27 +88,27 @@
 
 }
 .archive-record-box{
-    height: 27rem;
+    height: 25rem;
 
     h6{
-        font-size: var(--font28);
+        font-size: var(--font22);
         color: rgba(var(--royalblue), 1);
         font-weight: normal;
-        margin-top: 2.4rem;
-        margin-bottom: 1.7rem;
-        font-weight: 900;
+        margin-top: 2rem;
+        margin-bottom: 1.5rem;
+        font-weight: bold;
     }  
     
     p{
-        font-size: var(--font20);
+        font-size: var(--font16);
         color: rgba(var(--royalblue), 1);
         padding: .25rem;
     }
 }
 .archive-icon-imgs{
     background-color: rgba(var(--royalblue), 1);
-    width: 11.7rem;
-    height: 11.7rem;
+    width: 11rem;
+    height: 11rem;
     margin: 0 auto;
     border-radius: 25rem;
 
@@ -171,9 +172,11 @@
         font-size: var(--font22);
         padding: .2rem;
         color: rgba(var(--royalblue), 1);
+        font-weight: bold;
     }
 
-    .qwe{
+    .archive-Builders-text{
+        
         &::before{
             content: '';
             width: 2.2rem;
