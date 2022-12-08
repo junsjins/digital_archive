@@ -9,11 +9,14 @@
     <link rel="stylesheet" href="common/css/default.css">
     <link rel="stylesheet" href="module/css/dropDown.css"> <!--dropDowm-->
     <link rel="stylesheet" href="common/css/variables.css"> <!--variables-->
+    <link rel="stylesheet" href="/usr/css/swiper.min.css"> <!--variables-->
 
     <link rel="stylesheet" href="usr/style.css">
 
     <script src="/common/js/jquery-3.6.0.js"></script>
     <script src="/module/js/extraDropDown.js" defer></script> <!--dropDowm-->
+    <script src="/usr/js/swiper-bundle.js" defer></script>
+    <script src="/usr/js/main.js" defer></script>
 
     <title>::조선통신사 디지털 아카이브</title>
 </head>
@@ -29,13 +32,13 @@
                     <img src="common/img/logo_w.svg" alt="조선통신사 디지털아카이브 로고">
                     <h2 data-lang-type="kr">조선통신사 디지털 아카이브</h2>
                 </div>
-                <div class="main-search-bar">
+                <form class="main-search-bar">
                     <input type="text" placeholder="검색어를 입력하세요.">
                     <button>찾아보기</button>
-                </div>
+                </form>
             </article>
         </section>
-        <section id="mainIntro">
+        <section id="mainCollection">
             <article id="mainIntroInner" class="web-common-inner">
                 <div class="main-intro-left">
                     
@@ -47,52 +50,56 @@
                 <div class="vt-line"></div>
                 <div class="main-intro-right">
                     
-                    <h2>2017年10月30日</h2>
+                    <h2>유네스코 세계문화유산</h2>
+                    <p>2017年10月30日</p>
                     <p data-lang-type="kr">200여년간 이어진 한일 교류의 상징</p>
                     <P data-lang-type="kr">조선통신사 기록물 유네스코 등재</P>
                 </div>
             </article>
-        </section>
-        <section id="mainCollection">
             <article id="mainCollInner" class="web-common-inner">
-                <div class="main-coll-text">
-                    <h3>디지털<span>소장자료</span></h3>
-                    <p class="main-coll-subT">DIGITAL COLLECTION</p>
-                    <div class="main-coll-button">
-                        MORE
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M16 12l-6 6V6z" fill="rgba(255,255,255,1)"/></svg>
+                <hr>
+                <h3>디지털 소장자료</h3>
+                <div class="main-more-button">
+                    MORE
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M16 12l-6 6V6z"/></svg>
+                </div>
+                <div class="main-coll-slider">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img src="/common/img/coll-item-temp01.jpg" alt="">
+                        <h4>K- I -2 변례집요</h4>
+                        <p>국립중앙도서관</p>
+                        <button class="coll-item-more-button">READ MORE</button>
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="/common/img/coll-item-temp02.jpg" alt="">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="/common/img/coll-item-temp03.jpg" alt="">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="/common/img/coll-item-temp04.jpg" alt="">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="/common/img/coll-item-temp05.jpg" alt="">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="/common/img/coll-item-temp06.jpg" alt="">
+                      </div>
+                      
                     </div>
-                </div>
-                <div class="main-coll-items">
-                    <ul>
-                        <li>
-                            <img src="/common/img/coll-item-temp01.jpg" alt="소장자료01">
-                            <label>K-II-8 김동명사상록</label>
-                        </li>
-                        <li>
-                            <img src="/common/img/coll-item-temp02.jpg" alt="소장자료02">
-                            <label>K-II-29 일동장유가</label>
-                        </li>
-                        <li>
-                            <img src="/common/img/coll-item-temp03.jpg" alt="소장자료03">
-                            <label>K-I-2 변례집요</label>
-                        </li>
-                        <li>
-                            <img src="/common/img/coll-item-temp04.jpg" alt="소장자료04">
-                            <label>K-I-1 통신사등록</label>
-                        </li>
-                        <li>
-                            <img src="/common/img/coll-item-temp05.jpg" alt="소장자료05">
-                            <label>K-I-1 통신사등록</label>
-                        </li>
-                        <li>
-                            <img src="/common/img/coll-item-temp06.jpg" alt="소장자료05">
-                            <label>K-II-23 일관시초</label>
-                        </li>
-                    </ul>
-                </div>
+                    <div class="main-coll-slider-buttons">
+                        <div class="main-slider-prev"></div>
+                        <div class="main-slider-pause"></div>
+                        <div class="main-slider-next"></div>                
+                    </div>
+                    
+                  </div>
             </article>
+            
+            
         </section>
+ 
 
         <section id="mainSubject">
             <article id="mainSubjectInner" class="web-common-inner">

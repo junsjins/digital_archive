@@ -12,7 +12,6 @@
         display:flex;
         flex-direction:column;
         align-items: center;
-        gap:2.8rem;
         
     }
     .main-top-select{
@@ -37,7 +36,7 @@
         align-items:center;
         gap:1rem;
         color:rgba(var(--white),1);
-        margin-top:13rem;
+        margin:13rem 0 2.5rem;
         img{
             width:3rem;
         }
@@ -51,6 +50,10 @@
         grid-template-columns: 1fr 6rem;;
         border:.3rem solid rgba(var(--white),1);
         border-radius:2rem;
+        &:focus-within {
+            border-color: rgba(var(--royalblue), .3);
+            box-shadow: 0 0 0 .15rem rgba(var(--royalblue), .1);
+        }
         input{
             background:rgba(var(--white),1);
             padding:1rem;
@@ -69,33 +72,48 @@
 }
 
 /* 메인화면_소개영역 */
-
-#mainIntro{
+/* 소개(디지털 아카이브, 유네스코 등재) */
+#mainCollection{
     background:url(/common/img/back_cloud.jpg);
     background-size:cover;
-    
+    padding-top:19rem;
     position: relative;
     z-index:1;
+    hr{
+        width:1.9rem;
+        height:2px;
+        background:rgba(var(--black),1);
+        margin:0 auto;
+    }
+    h3{
+        margin: 2.5rem auto;
+        font-size:var(--font42);
+        color: rgba(var(--black),.82);
+    }
     #mainIntroInner{
         background:url(/common/img/main_red_cloud.jpg);
         background-size:150%;
-        top: -5rem;
-        position: relative;
+        top: -8rem;
+        left:50%;
+        transform: translateX(-50%);
+        position: absolute;
         display:flex;
         justify-content: center;
         align-items: center;
+        width:100%;
         > div{
             display:flex;
             flex-direction: column;
             align-items: center;
             width:50%;
             padding:3.5rem 0;
+            position:relative;
             h2{
                 margin-bottom:1.5rem;
                 color:rgba(var(--white),1);
                 font-family:'NM';
                 font-weight:bold;
-                font-size:1.5rem;
+                font-size:var(--font28);
             }
             p{
                 color:rgba(var(--white),1);
@@ -105,108 +123,116 @@
             &.vt-line{
                 width:2px;
                 height: 8.5rem;
-                background: rgba(var(--white), .5);
+                background: rgba(var(--white), .25);
+            }
+            &::after{
+                content:'';
+                display:block;
+                position:absolute;
+                width:100%;
+                height:100%;
+                top:.25rem;
             }
         }
-  
-    // &:before{
-    //     content:'';
-    //     width:100%;
-    //     height:100%;
-    //     background:#fff;
-    //     position:absolute;
-    //     top:0;
-    //     left:0;
-    //     z-index:0;
-    // }
+        .main-intro-left{
+            &::after{
+                background:url(/common/img/logo_w.svg) no-repeat;
+                opacity:.15;
+                left:0;
+                background-size:35%;
+            }
+        }    
+        .main-intro-right{
+            &::after{
+                background:url(/common/img/UNESCO_logo.svg) no-repeat;
+                opacity:.15;
+                right:0;
+                background-size:41%;
+                background-position:top right;
+            }
+        }
     }
+    #mainCollInner{
+        flex-direction:column;
+        overflow:hidden;
+        padding-bottom: 4.5rem;
+        .main-coll-slider{
+            margin-top:4.35rem;
+            
+            position:relative;
+            .swiper-slide{
+                display:flex;
+                flex-direction:column;
+                align-items:center;
+                h4{
+                    font-weight:bold;
+                    font-size:var(--font24);
+                    margin:1.6rem auto .7rem auto;
+                }
+                p{
+                    font-size:var(--font18);
+                }
+                button{
+                    border:1px solid rgba(var(--white),1);
+                    border-radius:.5rem;
+                    font-size:var(--font18);
+                    padding:.5rem .75rem;
+                    font-family:"BN";
+                    margin:1.25rem auto 0;
+                }
+            }
+            .main-coll-slider-buttons{
+                position:absolute;
+                top:-2.35rem;
+                right:0;
+                display:flex;
+                gap:.9rem;
+                > div{
+                    width:.45rem;
+                    height:.95rem;
+                    background-size: contain;
+                    cursor:pointer;
+                }
+                .main-slider-prev{
+                    background:url(/common/img/main-arr-left.svg) no-repeat;
+                }
+                .main-slider-pause{
+                    background:url(/common/img/main-slider-pause.svg) no-repeat;
+                }
+                .main-slider-next{
+                    background:url(/common/img/main-arr-right.svg) no-repeat;
+                }
+            }
+            
+        }
+    }
+    &::after{
+        content:'';
+        display:block;
+        position:absolute;
+        bottom:0;
+        left:0;
+        width:100%;
+        height:28rem;
+        background:url(/common/img/main_green_cloud.jpg) no-repeat;
+        background-size:150%;
+    }
+        
 }    
-/* 소개(디지털 아카이브, 유네스코 등재) */
+
+.main-more-button{
+    margin:0 auto;
+    border: 1px solid rgba(var(--black),1);
+    padding: 0.5rem .7rem .3rem 1.2rem;
+    font-size:1.1rem;
+    display:flex;
+    align-items:center;
+}
 
 
 /* 디지털 소장자료 */
 
-#mainCollection{
-    width:100%;
-    height:50rem;
-    background:url(/common/img/main_coll_back.jpg) no-repeat;
-    background-size:cover;
-    top: -5rem;
-    position: relative;
-    padding: 9rem 0 0;
-}
 
-#mainCollInner{
-    justify-content: space-between;
-    
-    .main-coll-text{
-        color:#fff;
-        h3{
-            font-size:var(--font42);
-            font-family: var(--gMark);
-            line-height: 1.3;
-            font-weight: normal;
-            span{
-                display:block;
-            }    
-        }
-        p{
-            &.main-coll-subT{
-                margin:1rem 0 4.3rem 0;
-                font-size:var(--font18);
-                letter-spacing: 2px;
-            }
-        }
-        .main-coll-button{
-            display:flex;
-            justify-content:center;
-            align-items:center;
-            width:5.5rem;
-            border:2px solid #fff;
-            padding: 0.25rem 1.25rem 0.25rem 1.75rem;
-            cursor:pointer;
-            svg{
-                flex-shrink: 0;
-            }
-        }
-    }
-    .main-coll-items{
-        max-width:768px;
-        padding:0 .5rem;
-        width: 100%;
-        ul{
-            display:grid;
-            grid-template-columns:1fr 1fr 1fr;
-            grid-gap:1.8rem 1rem;
-            li{
-                display:flex;
-                flex-direction:column;
-                position:relative;
-                cursor:pointer;
-                img{
-                    aspect-ratio: 5/7.4;
-                    width:100%;
-                }
-                label{
-                    position:absolute;
-                    bottom:0;
-                    left:0;
-                    display:block;
-                    width:100%;
-                    padding:1.5rem 0;
-                    font-size:var(--font18);
-                    color: rgba(var(--black),.5);
-                    text-align:center;
-                    background:#fff;
-                    font-family:var(--gMark);
-                    border-left:1px solid rgba(var(--black),1);
-                    border-right:1px solid rgba(var(--black),1);
-                    border-bottom:1px solid rgba(var(--black),1);
-                }
-            }
-        }
-    }
-}
 
 /* 주제별 기록물 */
 
