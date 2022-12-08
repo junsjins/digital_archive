@@ -24,20 +24,58 @@
 <body id="">
     <div id="wrap">
         <section id="archive-nav">
-            <ul id="subNav1">
-                <li class="sub-page-routes1 " onclick="location.href='archive.html'">아카이브 안내</li>
-                <li class="sub-page-routes1 current" onclick="location.href='DataUse.html'">자료이용 안내</li>
+            <ul id="archiveSubNav">
+                <li class="archive-sub-routes " onclick="location.href='archive.html'">아카이브 안내</li>
+                <li class="archive-sub-routes current" onclick="location.href='dataUse.html'">자료이용 안내</li>
             </ul>
+            <div id="contentView" data-sub-route="community" data-sub-route-current="자료이용 안내">
+            </div>
         </section>
 
-        <section id="archive-content">
-            <article id="archive-content-inner">
-                <div id="contentView" data-sub-route="community" data-sub-route-current="자료이용 안내">
+        <section id="dataUse-content">
+            <article id="dataUse-content-inner">
+                <div class="dataUse-top-text">
+                    <h3>자료 이용 안내 및 저작권 정책</h3>
+                    <ul class="dataUse-list-box">
+                        <li><span class="d"></span>조선통신사 디지털 아카이브는 타 기관 소장 조선통신사 기록물 원문 이미지의 웹 내 열람과 해설을 제공하는 서비스로 원문 이미지의 다운로드, 복제는 불가합니다.</li>
+                        <li><span class="dot"></span>조선통신사 디지털 아카이브에서 제공하는 조선통신사 기록물 이미지에 대한 권리는 소장처에 있으며 기록물 이용에 대한 저작권 정책은 소장처의 규정을 따릅니다. </li>
+                        <li><span class="dot"></span>기록물 이미지의 복제 및 대여, 재사용 등 웹 내 열람 이외의 이용을 원하시는 경우, 소장처를 통한 별도의 문의 및 허가가 필요합니다.</li>
+                        <li><span class="dot"></span>조선통신사 기록물에 대한 해설 본문과 번역본 등을 사용하고자 할 경우에는 부산문화재단 (051-660-0001)과 협의한 이후에 이용하여 주시기 바랍니다.</li>
+                        <li><span class="dot"></span>자료의 무단 전재, 복사, 재배포, 상업적 이용 등 부산문화재단 및 소장처의 이용 허가 없이 자료를 무단으로 사용할 시 법적 책임이 부과됩니다.</li>
+                        <li><span class="dot"></span>조선통신사 디지털 아카이브에서 서비스하는 자료 가운데 저작권법 상 문제의 소지가 있을 경우 열람 서비스를 중단할 수 있습니다.</li>
+                    </ul>
+                </div>
+                <div class="dataUse-bottom-table">
+                    <p class="dataUse-table-info"> 소장처별 자료 이용 안내 (국내 63건 124점)</p>
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>연번</td>
+                                <td>소장처</td>
+                                <td>소장 기록물</td>
+                                <td>이용안내</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>고려대학교</td>
+                                <td>
+                                    <div class="qweqwe">
+                                        <p>K.ll-24 일본록 (日本錄)</p>
+                                        <p>K.ll-25 승사록 (乘槎錄)</p>
+                                        <p>K.ll-26 사록 (槎錄)</p>
+                                        <p>ll-32 동사록 (東槎録)</p>
+                                    </div>
+                                </td>
+                                <td><img src="/common/img/place/place_01.png"></td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </article><!--archive-content-inner-->
         </section><!--archive-content-->
     </div>
-
 
 </body>
 </html>
