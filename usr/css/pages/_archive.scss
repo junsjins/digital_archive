@@ -48,7 +48,7 @@
     width: 1024px;
     margin: 0 auto;
 }
-
+//top
 .archive-top-text {
     h3 {
         font-size: 1.9rem;
@@ -66,12 +66,14 @@
     }
 }
 
+//middle
 .archive-middle-icon {
     display: flex;
     flex-flow: row wrap;
     align-items: center;
     justify-content: center;
     padding-top: 3.5rem;
+    margin-bottom: 22.5rem;
 
 
     >div {
@@ -93,6 +95,7 @@
         font-weight: normal;
         margin-top: 2.4rem;
         margin-bottom: 1.7rem;
+        font-weight: 900;
     }  
     
     p{
@@ -137,4 +140,61 @@
 
 .icon-img4 {
     background-image: url(/common/img/img4.png);
+}
+
+
+
+//bottom
+#archive-bottom-Builders{
+    height: 43.5rem;
+    background-color: rgba(var(--black), .1);
+   
+}
+
+#archive-bottom-inner{
+    width: 1024px;
+    margin: 0 auto;
+    height: inherit;
+    display: flex;
+    padding: 6rem 5rem;
+
+
+    >div{
+        flex-basis: 50%;
+        
+    }
+}
+.archive-Builders-title{
+
+
+    p{
+        font-size: var(--font22);
+        padding: .2rem;
+        color: rgba(var(--royalblue), 1);
+    }
+
+    .qwe{
+        &::before{
+            content: '';
+            width: 2.2rem;
+            height: .15rem;
+            display: block;
+            background-color: rgba(var(--royalblue), 1);
+            margin-bottom: 1rem;
+
+        }
+    }
+}
+
+.archive-Builders-list{
+
+    color: rgba(var(--black), .4);
+    font-size: var(--font18);
+    padding-top: .7rem;
+
+    p{
+        padding: .6rem;
+        letter-spacing: 1px;
+    }
+
 }
