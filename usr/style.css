@@ -199,6 +199,9 @@
 #mainCollection #mainCollInner .main-coll-slider .main-coll-slider-buttons .main-slider-next {
   background: url(/common/img/main-arr-right.svg) no-repeat;
 }
+#mainCollection #mainCollInner .main-coll-slider .main-coll-slider-buttons .pause-off {
+  background: url(/common/img/main-arr-autoplay.svg) no-repeat !important;
+}
 #mainCollection::after {
   content: "";
   display: block;
@@ -484,7 +487,7 @@
   background-color: rgba(var(--black), 0.1);
 }
 
-#subNav1 {
+#archiveSubNav {
   display: flex;
   flex-flow: row nowrap;
   gap: 0.2rem;
@@ -499,12 +502,12 @@
   width: 100%;
 }
 
-.sub-page-routes1 {
+.archive-sub-routes {
   display: grid;
   place-items: center;
   height: 2.5rem;
   background-color: rgba(var(--white), 0.4);
-  color: rgba(var(--white), 0.75);
+  color: rgba(var(--black), 0.35);
   font-size: 0.8rem;
   transition: background-color 0.15s, color 0.15s;
   cursor: pointer;
@@ -513,7 +516,7 @@
   flex-basis: 50%;
   font-size: var(--font18);
 }
-.sub-page-routes1.current {
+.archive-sub-routes.current {
   background-color: rgba(var(--white), 1);
   color: rgba(var(--black), 1);
   font-weight: 900;
@@ -544,8 +547,8 @@
   flex-flow: row wrap;
   align-items: center;
   justify-content: center;
-  padding-top: 3.5rem;
-  margin-bottom: 22.5rem;
+  padding-top: 3rem;
+  margin-bottom: 15rem;
 }
 .archive-middle-icon > div {
   display: flex;
@@ -556,26 +559,26 @@
 }
 
 .archive-record-box {
-  height: 27rem;
+  height: 25rem;
 }
 .archive-record-box h6 {
-  font-size: var(--font28);
+  font-size: var(--font22);
   color: rgba(var(--royalblue), 1);
   font-weight: normal;
-  margin-top: 2.4rem;
-  margin-bottom: 1.7rem;
-  font-weight: 900;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+  font-weight: bold;
 }
 .archive-record-box p {
-  font-size: var(--font20);
+  font-size: var(--font16);
   color: rgba(var(--royalblue), 1);
   padding: 0.25rem;
 }
 
 .archive-icon-imgs {
   background-color: rgba(var(--royalblue), 1);
-  width: 11.7rem;
-  height: 11.7rem;
+  width: 11rem;
+  height: 11rem;
   margin: 0 auto;
   border-radius: 25rem;
 }
@@ -625,8 +628,9 @@
   font-size: var(--font22);
   padding: 0.2rem;
   color: rgba(var(--royalblue), 1);
+  font-weight: bold;
 }
-.archive-Builders-title .qwe::before {
+.archive-Builders-title .archive-Builders-text::before {
   content: "";
   width: 2.2rem;
   height: 0.15rem;
@@ -647,76 +651,76 @@
 
 /*dataUse.css*/
 #dataUse-content-inner {
-	margin: 0 auto;
-	width: 1024px;
+  margin: 0 auto;
+  width: 1024px;
 }
 
 .dataUse-top-text {
-	padding-top: 5.1rem;
-	padding-bottom: 6.6rem;
+  padding-top: 5.1rem;
+  padding-bottom: 6.6rem;
 }
 .dataUse-top-text h3 {
-	font-size: var(--font36);
-	color: rgba(var(--royalblue), 1);
-	margin-bottom: 3.5rem;
+  font-size: var(--font36);
+  color: rgba(var(--royalblue), 1);
+  margin-bottom: 3.5rem;
 }
 
 .dataUse-list-box {
-	display: flex;
-	flex-flow: column nowrap;
+  display: flex;
+  flex-flow: column nowrap;
 }
 .dataUse-list-box li {
-	padding: 0.4rem 0;
-	font-size: var(--font14);
-	text-indent: -1rem;
+  padding: 0.4rem 0;
+  font-size: var(--font14);
+  text-indent: -1rem;
 }
 .dataUse-list-box li::before {
-	width: 5px;
-	height: 5px;
-	background-color: rgba(var(--black), 0.7);
-	display: inline-block;
-	vertical-align: middle;
-	border-radius: 5px;
-	margin-right: 0.8rem;
-	content: "";
+  width: 5px;
+  height: 5px;
+  background-color: rgba(var(--black), 0.7);
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: 5px;
+  margin-right: 0.8rem;
+  content: "";
 }
 .dataUse-bottom-table {
-	width: 100%;
-	margin-bottom: 10rem;
+  width: 100%;
+  margin-bottom: 10rem;
 }
 .dataUse-bottom-table table {
-	width: 100%;
-	text-align: center;
-	margin-top: 0.25rem;
+  width: 100%;
+  text-align: center;
+  margin-top: 0.25rem;
 }
 .dataUse-bottom-table thead td {
-	border-top: 0;
+  border-top: 0;
 }
 .dataUse-bottom-table td {
-	border-top: 1px solid rgba(var(--black), 0.1);
-	border-left: 1px solid rgba(var(--black), 0.1);
-	padding: 2rem 1rem;
+  border-top: 1px solid rgba(var(--black), 0.1);
+  border-left: 1px solid rgba(var(--black), 0.1);
+  padding: 2rem 1rem;
 }
 .dataUse-bottom-table td .table-td-list {
-	text-align: left;
-	width: 60%;
-	margin: 0 auto;
+  text-align: left;
+  width: 60%;
+  margin: 0 auto;
 }
 .dataUse-bottom-table td .table-td-list p {
-	padding: 0.25rem 0;
+  padding: 0.25rem 0;
 }
 .dataUse-bottom-table td:first-child {
-	border-left: 0;
+  border-left: 0;
 }
 .dataUse-bottom-table td img {
-	width: 9rem;
-	margin: 0 auto;
+  width: 9rem;
+  margin: 0 auto;
 }
 
 .dataUse-table-info {
-	padding: 1.1rem;
-	background-color: rgba(var(--black), 0.1);
-	font-size: var(--font18);
+  padding: 1.1rem;
+  background-color: rgba(var(--black), 0.1);
+  font-size: var(--font18);
 }
 
 header {
@@ -854,37 +858,38 @@ nav a {
           margin-inline-start: auto;
   width: 50rem;
   height: 3.3rem;
-  padding-inline: 2rem;
   border: 0.5px solid rgba(var(--black), 0.5);
   border-radius: 5rem;
   margin: 0 auto;
+  overflow: hidden;
 }
 #totalSearch > hr {
   height: 0.8rem;
   background-color: rgba(var(--black), 0.1);
 }
-#totalSearch > #inputSearch {
+#totalSearch #inputSearch {
   flex: 1 1 auto;
   outline: 0;
   padding: 0.25rem;
 }
-#totalSearch > #btnSearch {
-  color: rgba(var(--black), 1);
+#totalSearch #btnSearch {
+  color: rgba(var(--white), 1);
   cursor: pointer;
+  background-color: rgba(var(--royalblue), 1);
+  padding: 1.5rem;
 }
 #totalSearch:focus-within {
   border-color: rgba(var(--royalblue), 0.3);
   box-shadow: 0 0 0 0.15rem rgba(var(--royalblue), 0.1);
 }
-#totalSearch:focus-within > #btnSearch {
-  color: rgba(var(--royalblue), 1);
-}
 
 #slctFilter {
   outline: 0;
-  flex: 0 0 4rem;
+  flex: 0 0 6rem;
   -webkit-padding-end: 1.25rem;
           padding-inline-end: 1.25rem;
+  -webkit-padding-start: 1.25rem;
+          padding-inline-start: 1.25rem;
   background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="14px" height="14px"%3E%3Cpath fill="none" d="M0 0h24v24H0z"/%3E%3Cpath fill="currentColor" d="M12 13.172l4.95-4.95 1.414 1.414L12 16 5.636 9.636 7.05 8.222z"/%3E%3C/svg%3E');
   background-repeat: no-repeat;
   background-position: right center;
