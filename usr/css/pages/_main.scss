@@ -155,58 +155,67 @@
     #mainCollInner{
         flex-direction:column;
         overflow:hidden;
-        padding-bottom: 4.5rem;
+        padding-bottom: 6.5rem;
+    }
+    #mainCollBottom{
+        
+        width:100%;
+        height:28rem;
+        background:url(/common/img/main_green_cloud.jpg) no-repeat;
+        background-size:150%;
+        position:relative;
+        
         .main-coll-slider{
-            margin-top:4.35rem;
-            
+            max-width:1280px;
+            margin:4.35rem auto 0;
             position:relative;
+            top:-6.5rem;
+            overflow: hidden;
+ 
             .swiper-slide{
                 display:flex;
                 flex-direction:column;
                 align-items:center;
+                cursor:pointer;
+                .main-coll-each-container{
+                    overflow:hidden;
+                }
+                &:hover{
+                    img{
+                        scale:105%;
+                        transition:.3s;
+                    }
+                    button{
+                        background:rgba(var(--white),1);
+                        
+                        background-clip: border-box;
+                        -webkit-background-clip: border-box;
+                        color: #2eb3a5;
+                    }
+                }
                 h4{
-                    font-weight:bold;
+                    font-weight:normal;
                     font-size:var(--font24);
                     margin:1.6rem auto .7rem auto;
+                    color:rgba(var(--white),1);
                 }
                 p{
                     font-size:var(--font18);
+                    color:rgba(var(--white),1);
+                    font-weight: 100;
                 }
                 button{
                     border:1px solid rgba(var(--white),1);
-                    border-radius:.5rem;
+                    border-radius:1rem;
                     font-size:var(--font18);
-                    padding:.5rem .75rem;
+                    padding:0.25rem 0.75rem;
                     font-family:"BN";
                     margin:1.25rem auto 0;
+                    color:rgba(var(--white),1);
+                    letter-spacing:2px;
                 }
             }
-            .main-coll-slider-buttons{
-                position:absolute;
-                top:-2.35rem;
-                right:0;
-                display:flex;
-                gap:.9rem;
-                > div{
-                    width:.45rem;
-                    height:.95rem;
-                    background-size: contain;
-                    cursor:pointer;
-                }
-                .main-slider-prev{
-                    background:url(/common/img/main-arr-left.svg) no-repeat;
-                }
-                .main-slider-pause{
-                    background:url(/common/img/main-slider-pause.svg) no-repeat;
-                }
-                .main-slider-next{
-                    background:url(/common/img/main-arr-right.svg) no-repeat;
-                }
-                .pause-off{
-                    background:url(/common/img/main-arr-autoplay.svg) no-repeat !important;
-                    
-                }
-            }
+            
             
         }
     }
@@ -214,13 +223,36 @@
         content:'';
         display:block;
         position:absolute;
-        bottom:0;
-        left:0;
-        width:100%;
-        height:28rem;
-        background:url(/common/img/main_green_cloud.jpg) no-repeat;
-        background-size:150%;
+        
+        
     }
+    .main-coll-slider-buttons{
+        position:absolute;
+        top:-2.35rem;
+        right:0;
+        display:flex;
+        gap:.9rem;
+        > div{
+            width:.45rem;
+            height:.95rem;
+            background-size: contain;
+            cursor:pointer;
+        }
+        .main-slider-prev{
+            background:url(/common/img/main-arr-left.svg) no-repeat;
+        }
+        .main-slider-pause{
+            background:url(/common/img/main-slider-pause.svg) no-repeat;
+        }
+        .main-slider-next{
+            background:url(/common/img/main-arr-right.svg) no-repeat;
+        }
+        .pause-off{
+            background:url(/common/img/main-arr-autoplay.svg) no-repeat !important;
+            
+        }
+    }
+  
         
 }    
 
