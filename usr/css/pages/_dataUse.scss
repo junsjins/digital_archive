@@ -1,32 +1,32 @@
 /*dataUse.css*/
 
 
-#dataUse-content-inner{
+#dataUse-content-inner {
     margin: 0 auto;
     width: 1024px;
 }
 
-.dataUse-top-text{
+.dataUse-top-text {
     padding-top: 5.1rem;
     padding-bottom: 6.6rem;
 
-    h3{
+    h3 {
         font-size: var(--font36);
         color: rgba(var(--royalblue), 1);
         margin-bottom: 3.5rem;
     }
 }
 
-.dataUse-list-box{
+.dataUse-list-box {
     display: flex;
     flex-flow: column nowrap;
 
-    li{
+    li {
         padding: .4rem 0;
         font-size: var(--font14);
         text-indent: -1rem;
 
-        &::before{
+        &::before {
             width: 5px;
             height: 5px;
             background-color: rgba(var(--black), .7);
@@ -38,55 +38,55 @@
         }
     }
 
-    .dot{
+    .dot {}
 
+}
 
+.dataUse-bottom-table {
+    width: 100%;
+    margin-bottom: 10rem;
+
+    table {
+        width: 100%;
+        text-align: center;
+        margin-top: .25rem;
+    }
+
+    thead {
+        td {
+            border-top: 0;
+        }
+    }
+
+    td {
+        border-top: 1px solid rgba(var(--black), .1);
+        border-left: 1px solid rgba(var(--black), .1);
+        padding: 2rem 1rem;
+
+        .table-td-list {
+            text-align: left;
+            width: 60%;
+            margin: 0 auto;
+
+            p {
+                padding: .25rem 0;
+            }
+        }
+
+        &:first-child {
+            border-left: 0;
+        }
+
+        img {
+            width: 9rem;
+            margin: 0 auto;
+        }
     }
 
 }
 
-.dataUse-bottom-table{
-    width: 100%;
-    margin-bottom: 10rem;
-}
-.dataUse-table-info{
+.dataUse-table-info {
     padding: 1.1rem;
     background-color: rgba(var(--black), .1);
     font-size: var(--font18);
 }
-
-
-table{
-    width: 100%;
-    text-align: center;
-    margin-top: .25rem;
-}
-
-thead{
-    td{
-        border-top: 0;
-    }
-}
-
-td{
-    border-top: 1px solid rgba(var(--black), .1);
-   border-left: 1px solid rgba(var(--black), .1);
-   padding: 2rem 1rem;
-
-   .qweqwe{
-    text-align: left;
-    width: 60%;
-    margin: 0 auto;
-   }
-   
-
-   &:first-child{
-    border-left:0 ;
-   }
-
-   img{
-    width: 9rem;
-    margin: 0 auto;
-   }
-}
-

@@ -9,41 +9,42 @@
     margin-inline-start: auto;
     width: 50rem;
     height: 3.3rem;
-    padding-inline: 2rem;
+    // padding-inline: 2rem;
     border: .5px solid rgba(var(--black), .5);
     border-radius: 5rem;
     margin: 0 auto;
+    overflow: hidden;
 
     >hr {
         height: .8rem;
         background-color: rgba(var(--black), .1);
     }
 
-    >#inputSearch {
+    #inputSearch {
         flex: 1 1 auto;
         outline: 0;
         padding: 0.25rem;
     }
 
-    >#btnSearch {
-        color: rgba(var(--black), 1);
+    #btnSearch {
+        color: rgba(var(--white), 1);
         cursor: pointer;
-    }
+        background-color: rgba(var(--royalblue), 1);
+        padding: 1.5rem;
+   }
 
     &:focus-within {
         border-color: rgba(var(--royalblue), .3);
         box-shadow: 0 0 0 .15rem rgba(var(--royalblue), .1);
-
-        >#btnSearch {
-            color: rgba(var(--royalblue), 1);
-        }
     }
+
 }
 
 #slctFilter {
     outline: 0;
-    flex: 0 0 4rem;
+    flex: 0 0 6rem;
     padding-inline-end: 1.25rem;
+    padding-inline-start: 1.25rem;
     background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="14px" height="14px"%3E%3Cpath fill="none" d="M0 0h24v24H0z"/%3E%3Cpath fill="currentColor" d="M12 13.172l4.95-4.95 1.414 1.414L12 16 5.636 9.636 7.05 8.222z"/%3E%3C/svg%3E');
     background-repeat: no-repeat;
     background-position: right center;
@@ -77,6 +78,7 @@
 
         .Recent_searches {
             font-weight: 900;
+
             &::after {
                 content: '';
                 height: 1rem;
@@ -86,12 +88,12 @@
             }
         }
 
-        li{
+        li {
             color: rgba(var(--black), .5);
             display: flex;
             gap: .5rem;
-            
-            svg{
+
+            svg {
                 cursor: pointer;
             }
 
