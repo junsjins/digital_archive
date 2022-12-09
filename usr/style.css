@@ -1,5 +1,9 @@
 @charset "UTF-8";
 /*main_css*/
+.main-wrap-back {
+  background: url(/common/img/back_cloud.jpg);
+}
+
 /* 메인화면_검색창 */
 #mainSearch {
   background: url(/common/img/main_back_01.jpg) no-repeat;
@@ -52,8 +56,11 @@
   border-radius: 2rem;
 }
 #mainSearch .main-search-bar:focus-within {
-  border-color: rgba(var(--royalblue), 0.3);
-  box-shadow: 0 0 0 0.15rem rgba(var(--royalblue), 0.1);
+  border-color: rgba(var(--white), 0.3);
+  box-shadow: 0 0 0 0.15rem rgba(var(--white), 0.1);
+}
+#mainSearch .main-search-bar:focus-within input {
+  border-radius: 2rem 0 0 2rem;
 }
 #mainSearch .main-search-bar input {
   background: rgba(var(--white), 1);
@@ -71,25 +78,15 @@
 
 /* 메인화면_소개영역 */
 /* 소개(디지털 아카이브, 유네스코 등재) */
-#mainCollection {
-  background: url(/common/img/back_cloud.jpg);
-  background-size: cover;
-  padding-top: 19rem;
+#mainIntro {
+  padding-top: 39rem;
   position: relative;
   z-index: 1;
+  background: url(/common/img/data_back_font.png) no-repeat;
+  background-position: right 22rem;
+  background-size: 40%;
 }
-#mainCollection hr {
-  width: 1.9rem;
-  height: 2px;
-  background: rgba(var(--black), 1);
-  margin: 0 auto;
-}
-#mainCollection h3 {
-  margin: 2.5rem auto;
-  font-size: var(--font42);
-  color: rgba(var(--black), 0.82);
-}
-#mainCollection #mainIntroInner {
+#mainIntro #mainIntroInner {
   background: url(/common/img/main_red_cloud.jpg);
   background-size: 150%;
   top: -8rem;
@@ -101,7 +98,7 @@
   align-items: center;
   width: 100%;
 }
-#mainCollection #mainIntroInner > div {
+#mainIntro #mainIntroInner > div {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -109,24 +106,24 @@
   padding: 3.5rem 0;
   position: relative;
 }
-#mainCollection #mainIntroInner > div h2 {
+#mainIntro #mainIntroInner > div h2 {
   margin-bottom: 1.5rem;
   color: rgba(var(--white), 1);
   font-family: "NM";
   font-weight: bold;
   font-size: var(--font28);
 }
-#mainCollection #mainIntroInner > div p {
+#mainIntro #mainIntroInner > div p {
   color: rgba(var(--white), 1);
   line-height: 1.6;
   font-size: var(--font20);
 }
-#mainCollection #mainIntroInner > div.vt-line {
+#mainIntro #mainIntroInner > div.vt-line {
   width: 2px;
   height: 8.5rem;
   background: rgba(var(--white), 0.25);
 }
-#mainCollection #mainIntroInner > div::after {
+#mainIntro #mainIntroInner > div::after {
   content: "";
   display: block;
   position: absolute;
@@ -134,23 +131,62 @@
   height: 100%;
   top: 0.25rem;
 }
-#mainCollection #mainIntroInner .main-intro-left::after {
+#mainIntro #mainIntroInner .main-intro-left::after {
   background: url(/common/img/logo_w.svg) no-repeat;
   opacity: 0.15;
   left: 0;
   background-size: 35%;
 }
-#mainCollection #mainIntroInner .main-intro-right::after {
+#mainIntro #mainIntroInner .main-intro-right::after {
   background: url(/common/img/UNESCO_logo.svg) no-repeat;
   opacity: 0.15;
   right: 0;
   background-size: 41%;
   background-position: top right;
 }
-#mainCollection #mainCollInner {
+#mainIntro #mainCollInner {
   flex-direction: column;
   overflow: hidden;
   padding-bottom: 6.5rem;
+}
+#mainIntro::after {
+  content: "";
+  display: block;
+  position: absolute;
+}
+
+#mainCollection {
+  position: relative;
+  z-index: 2;
+}
+#mainCollection #mainCollInner {
+  position: absolute;
+  top: -19.5rem;
+  left: 0;
+  right: 0;
+  flex-direction: column;
+}
+#mainCollection #mainCollInner h3 {
+  text-align: center;
+  font-size: var(--font42);
+  margin: 2.2rem auto;
+  font-size: var(--font42);
+  color: rgba(var(--black), 0.82);
+}
+#mainCollection #mainCollInner hr {
+  width: 1.9rem;
+  height: 2px;
+  background: rgba(var(--black), 1);
+  margin: 0 auto;
+}
+#mainCollection #mainCollInner .main-more-button:hover {
+  background: rgba(var(--black), 0.82);
+  background-clip: border-box;
+  -webkit-background-clip: border-box;
+  color: rgba(var(--white), 1);
+}
+#mainCollection #mainCollInner .main-more-button:hover svg {
+  fill: rgba(var(--white), 1);
 }
 #mainCollection #mainCollBottom {
   width: 100%;
@@ -161,7 +197,7 @@
 }
 #mainCollection #mainCollBottom .main-coll-slider {
   max-width: 1280px;
-  margin: 4.35rem auto 0;
+  margin: 0 auto;
   position: relative;
   top: -6.5rem;
   overflow: hidden;
@@ -206,120 +242,184 @@
   color: rgba(var(--white), 1);
   letter-spacing: 2px;
 }
-#mainCollection::after {
-  content: "";
-  display: block;
+#mainCollection #mainCollBottom .main-coll-slider-buttons {
   position: absolute;
-}
-#mainCollection .main-coll-slider-buttons {
-  position: absolute;
-  top: -2.35rem;
-  right: 0;
+  top: -9.5rem;
+  right: 25%;
   display: flex;
   gap: 0.9rem;
 }
-#mainCollection .main-coll-slider-buttons > div {
+#mainCollection #mainCollBottom .main-coll-slider-buttons > div {
   width: 0.45rem;
   height: 0.95rem;
   background-size: contain;
   cursor: pointer;
 }
-#mainCollection .main-coll-slider-buttons .main-slider-prev {
+#mainCollection #mainCollBottom .main-coll-slider-buttons .main-slider-prev {
   background: url(/common/img/main-arr-left.svg) no-repeat;
 }
-#mainCollection .main-coll-slider-buttons .main-slider-pause {
+#mainCollection #mainCollBottom .main-coll-slider-buttons .main-slider-pause {
   background: url(/common/img/main-slider-pause.svg) no-repeat;
 }
-#mainCollection .main-coll-slider-buttons .main-slider-next {
+#mainCollection #mainCollBottom .main-coll-slider-buttons .main-slider-next {
   background: url(/common/img/main-arr-right.svg) no-repeat;
 }
-#mainCollection .main-coll-slider-buttons .pause-off {
+#mainCollection #mainCollBottom .main-coll-slider-buttons .pause-off {
   background: url(/common/img/main-arr-autoplay.svg) no-repeat !important;
 }
 
 .main-more-button {
   margin: 0 auto;
   border: 1px solid rgba(var(--black), 1);
-  padding: 0.5rem 0.7rem 0.3rem 1.2rem;
+  padding: 0.4rem 0.85rem 0.4rem 1.25rem;
   font-size: 1.1rem;
   display: flex;
   align-items: center;
+  cursor: pointer;
+  font-family: "BN";
+  font-weight: normal;
 }
 
 /* 디지털 소장자료 */
 /* 주제별 기록물 */
 #mainSubject {
   width: 100%;
-  height: 65rem;
+  height: 56.5rem;
   background: url(/common/img/main_subject_back.jpg) no-repeat;
   background-size: cover;
-  top: -5rem;
   position: relative;
-  padding: 9rem 0 0;
 }
-
-#mainSubjectInner {
-  justify-content: space-between;
-}
-#mainSubjectInner .main-subject-text {
-  color: #fff;
-}
-#mainSubjectInner .main-subject-text h3 {
-  font-size: var(--font42);
-  font-family: var(--gMark);
-  line-height: 1.3;
-  font-weight: normal;
-}
-#mainSubjectInner .main-subject-text h3 span {
+#mainSubject:before {
+  content: "";
   display: block;
-}
-#mainSubjectInner .main-subject-text p.main-subject-subT {
-  margin: 1rem 0 4.3rem 0;
-  font-size: var(--font18);
-  letter-spacing: 2px;
-}
-#mainSubjectInner .main-subject-text .main-subject-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 5.5rem;
-  border: 2px solid #fff;
-  padding: 0.25rem 1.25rem 0.25rem 1.75rem;
-  cursor: pointer;
-}
-#mainSubjectInner .main-subject-text .main-subject-button svg {
-  flex-shrink: 0;
-}
-#mainSubjectInner .main-subject-items {
-  max-width: 768px;
-  padding: 0 0.5rem;
   width: 100%;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 1rem;
+  height: 100%;
+  background: rgba(var(--marineblue), 0.75);
+  position: absolute;
+  top: 0;
+  left: 0;
 }
-#mainSubjectInner .main-subject-items > ul {
-  padding: 2rem 2.2rem;
+#mainSubject #mainSubjectInner {
+  position: relative;
+  z-index: 3;
   display: flex;
   flex-direction: column;
-  background-image: radial-gradient(rgba(var(--coral), 0) 5%, rgba(var(--coral), 0.9) 5%, rgba(var(--coral), 0.9) 100%);
-  background-position: -11rem -6.5rem;
+  padding-top: 7rem;
 }
-#mainSubjectInner .main-subject-items > ul:nth-child(1), #mainSubjectInner .main-subject-items > ul:nth-child(4) {
-  background-image: radial-gradient(rgba(var(--opcoral), 0) 5%, rgba(var(--opcoral), 0.82) 5%, rgba(var(--opcoral), 0.82) 100%);
+#mainSubject #mainSubjectInner hr {
+  width: 1.9rem;
+  height: 2px;
+  background: rgba(var(--white), 1);
+  margin: 0 auto;
 }
-#mainSubjectInner .main-subject-items > ul li {
-  font-family: var(--gMark);
-  font-size: var(--font22);
-  padding: 0.5rem 0;
-}
-#mainSubjectInner .main-subject-items > ul li:first-child {
+#mainSubject #mainSubjectInner h3 {
+  text-align: center;
+  font-size: var(--font42);
+  margin: 2.2rem auto;
+  font-size: var(--font42);
   color: rgba(var(--white), 1);
-  border-bottom: 1px solid rgba(var(--white), 1);
-  font-size: var(--font24);
-  margin-bottom: 1.5rem;
-  height: auto;
-  padding: 0.5rem 0 1rem;
+}
+#mainSubject #mainSubjectInner .main-more-button {
+  color: rgba(var(--white), 1);
+  border: 1px solid rgba(var(--white), 1);
+  margin-bottom: 4rem;
+}
+#mainSubject #mainSubjectInner .main-more-button:hover {
+  background: rgba(var(--white), 1);
+  color: rgba(var(--marineblue), 0.75);
+}
+#mainSubject #mainSubjectInner .main-more-button:hover svg {
+  fill: rgba(var(--marineblue), 0.75);
+}
+#mainSubject #mainSubjectInner .main-more-button svg {
+  fill: rgba(var(--white), 1);
+}
+#mainSubject #mainSubjectInner .main-subject-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 0.3rem;
+}
+#mainSubject #mainSubjectInner .main-subject-list .main-subject-item {
+  border: 1px solid rgba(var(--white), 1);
+  padding: 2.5rem 3.5rem;
+  position: relative;
+}
+#mainSubject #mainSubjectInner .main-subject-list ul.main-subject-eachlist {
+  width: 11rem;
+  height: 8.5rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 3rem 1.5rem 1.5rem 1.5rem;
+  grid-gap: 0.45rem;
+  box-sizing: content-box;
+}
+#mainSubject #mainSubjectInner .main-subject-list ul.main-subject-eachlist li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0.6rem;
+  font-size: var(--font14);
+  background: rgba(var(--white), 1);
+  color: rgba(var(--marineblue), 0.8);
+  cursor: pointer;
+}
+#mainSubject #mainSubjectInner .main-subject-list ul.main-subject-eachlist li:hover {
+  background: rgba(var(--marineblue), 1);
+  color: rgba(var(--white), 1);
+}
+#mainSubject #mainSubjectInner .main-subject-list ul.main-subject-eachlist li:hover svg {
+  fill: rgba(var(--white), 1);
+}
+#mainSubject #mainSubjectInner .main-subject-list ul.main-subject-eachlist li:first-child {
+  padding: 0;
+  font-size: 1.5rem;
+  font-weight: 900;
+  margin-bottom: 1rem;
+  color: rgba(var(--white), 1);
+  background: transparent;
+  cursor: auto;
+}
+#mainSubject #mainSubjectInner .main-subject-list ul.main-subject-eachlist li.main-filled-item {
+  background: rgba(var(--marineblue), 1);
+  color: rgba(var(--white), 1);
+}
+#mainSubject #mainSubjectInner .main-subject-list ul.main-subject-eachlist li.main-filled-item svg {
+  fill: rgba(var(--white), 1);
+}
+#mainSubject #mainSubjectInner .main-subject-list ul.main-subject-eachlist li.main-filled-item:hover {
+  background: rgba(var(--white), 1);
+  color: rgba(var(--marineblue), 1);
+}
+#mainSubject #mainSubjectInner .main-subject-list ul.main-subject-eachlist li.main-filled-item:hover svg {
+  fill: rgba(var(--marineblue), 1);
+}
+#mainSubject #mainSubjectInner .main-subject-list .main-subject-nation {
+  background: url(/common/img/main_subject_national.png) no-repeat;
+  background-position: 97% 97%;
+}
+#mainSubject #mainSubjectInner .main-subject-list .main-subject-form {
+  background: url(/common/img/main_subject_form.png) no-repeat;
+  background-position: 97% 97%;
+}
+#mainSubject #mainSubjectInner .main-subject-list .main-subject-category {
+  background: url(/common/img/main_subject_category.png) no-repeat;
+  background-position: 97% 97%;
+}
+#mainSubject #mainSubjectInner .main-subject-list .main-subject-age {
+  background: url(/common/img/main_subject_age.png) no-repeat;
+  background-position: 97% 97%;
+}
+#mainSubject #mainSubjectInner .main-subject-list .main-subject-age .main-subject-eachlist {
+  grid-template-columns: 1fr 1fr;
+}
+#mainSubject #mainSubjectInner .main-subject-list .main-subject-age .main-subject-eachlist li {
+  font-size: var(--font13);
+  padding: 0 0.2rem 0 0.5rem;
+  letter-spacing: -1px;
+}
+#mainSubject #mainSubjectInner .main-subject-list .main-subject-age .main-subject-eachlist li:first-child {
+  grid-column-start: 1;
+  grid-column-end: 3;
 }
 
 /*main.css End*/
