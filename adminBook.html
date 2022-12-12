@@ -15,6 +15,8 @@
 
     <script src="/common/js/jquery-3.6.0.js"></script>
     <script src="/module/js/extraDropDown.js" defer></script><!--dropDowm-->
+    <script src="/admin/js/adminWritePage.js" defer></script>
+
 
 
     <title>도록</title>
@@ -40,7 +42,116 @@
 
 
 
-    <section>여기에 진행하면 됩</section>
+    <section id="book-write-page">
+        <article id="bookWrite-page-inner">
+            <h3>소장자료 등록</h3>
+            <div class="dataWrite-field-box">
+                <p class="field-title">
+                    <span>I</span>
+                    <span>D</span>
+                </p>
+                <input type="text" class="field-text" readonly>
+            </div>
+
+            <div class="dataWrite-field-box">
+                <p class="field-title">
+                    <span>등</span>
+                    <span>재</span>
+                    <span>번</span>
+                    <span>호</span>
+                </p>
+                <input type="text" class="field-text">
+            </div>
+
+            <div class="dataWrite-field-box">
+                <p class="field-title">
+                    <span>표</span>
+                    <span>지</span>
+                    <span>이</span>
+                    <span>미</span>
+                    <span>지</span>
+                </p>
+                <div class="text-box">
+                    <input type="file" id="imgFile">
+                    <label for="imgFile" class="imgFiles">선택</label>
+                    <input class="upload-name field-text" value="국문파일" placeholder="첨부파일" readonly>
+
+                    <input type="file" id="imgFile1">
+                    <label for="imgFile1" class="imgFiles">선택</label>
+                    <input class="upload-name1 field-text" value="일문파일" placeholder="첨부파일" readonly>
+
+                    <input type="file" id="imgFile2">
+                    <label for="imgFile2" class="imgFiles">선택</label>
+                    <input class="upload-name2 field-text" value="영문파일" placeholder="첨부파일" readonly>
+                </div>
+            </div>
+
+            <div class="dataWrite-field-box">
+                <p class="field-title">
+                    <span>명</span>
+                    <span>칭</span>
+                </p>
+                <div class="text-box">
+                    <input type="text" class="field-text1" placeholder="국문">
+                    <input type="text" class="field-text1" placeholder="일문">
+                    <input type="text" class="field-text1" placeholder="영문">
+                </div>
+            </div>
+
+            <div class="dataWrite-field-box">
+                <p class="field-title">
+                    <span>도</span>
+                    <span>록</span>
+                    <span>링</span>
+                    <span>크</span>
+                    <span>전</span>
+                    <span>문</span>
+                    <span>가</span>
+                </p>
+                <div class="text-box">
+                    <input type="text" class="field-text1" placeholder="국문">
+                    <input type="text" class="field-text1" placeholder="일문">
+                    <input type="text" class="field-text1" placeholder="영문">
+                </div>
+            </div>
+
+            <div class="dataWrite-field-box">
+                <p class="field-title">
+                    <span>도</span>
+                    <span>록</span>
+                    <span>링</span>
+                    <span>크</span>
+                    <span>일</span>
+                    <span>반</span>
+                    <span>인</span>
+                </p>
+                <div class="text-box">
+                    <input type="text" class="field-text1" placeholder="국문">
+                    <input type="text" class="field-text1" placeholder="일문">
+                    <input type="text" class="field-text1" placeholder="영문">
+                </div>
+            </div>
+
+            <div class="dataWrite-field-box">
+                <p class="field-title">
+                    <span>도</span>
+                    <span>록</span>
+                    <span>본</span>
+                    <span>문</span>
+                </p>
+                <div class="text-box">
+                    <input type="text" class="field-text1" placeholder="국문">
+                    <input type="text" class="field-text1" placeholder="일문">
+                    <input type="text" class="field-text1" placeholder="영문">
+                </div>
+            </div>
+
+            <div class="admin-btn">
+                <button>저장</button>
+                <button>취소</button>
+            </div>
+        </article>
+    </section>
 </div>
 </body>
 
