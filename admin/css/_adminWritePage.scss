@@ -34,6 +34,18 @@
         justify-content: space-between;
     }
 
+    .field-title1 {
+        padding: .8rem 1rem 0.78rem;
+        flex-basis: 7rem;
+        background-color: rgba(var(--marineblue), 0.1);
+        font-size: var(--font14);
+        margin-right: .5rem;
+        display: flex;
+        justify-content: space-between;
+        height: 15.2rem;
+        place-items: center;
+    }
+
     .field-text {
         padding: .25rem;
         border-bottom: 1px solid rgba(var(--marineblue), .6);
@@ -48,6 +60,15 @@
         border-bottom: 1px solid rgba(var(--marineblue), .6);
         outline-color: rgba(var(--marineblue), 1);
         width: 33%;
+    }
+
+    .field-textarea{
+        padding: .5rem;
+        border: 1px solid rgba(var(--marineblue), .6);
+        outline-color: rgba(var(--marineblue), 1);
+        height: 5rem;
+        resize: none;
+        margin-bottom: .1rem;
     }
 
     input+input {
@@ -67,6 +88,12 @@
     .text-box{
         display: flex;
         flex-direction: row;
+        width: calc(100% - 7rem);
+    }
+
+    .textarea-box{
+        display: flex;
+        flex-direction: column;
         width: calc(100% - 7rem);
     }
 

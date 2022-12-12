@@ -110,6 +110,17 @@
 	display: flex;
 	justify-content: space-between;
 }
+.dataWrite-field-box .field-title1 {
+	padding: 0.8rem 1rem 0.78rem;
+	flex-basis: 7rem;
+	background-color: rgba(var(--marineblue), 0.1);
+	font-size: var(--font14);
+	margin-right: 0.5rem;
+	display: flex;
+	justify-content: space-between;
+	height: 15.2rem;
+	place-items: center;
+}
 .dataWrite-field-box .field-text {
 	padding: 0.25rem;
 	border-bottom: 1px solid rgba(var(--marineblue), 0.6);
@@ -123,6 +134,14 @@
 	border-bottom: 1px solid rgba(var(--marineblue), 0.6);
 	outline-color: rgba(var(--marineblue), 1);
 	width: 33%;
+}
+.dataWrite-field-box .field-textarea {
+	padding: 0.5rem;
+	border: 1px solid rgba(var(--marineblue), 0.6);
+	outline-color: rgba(var(--marineblue), 1);
+	height: 5rem;
+	resize: none;
+	margin-bottom: 0.1rem;
 }
 .dataWrite-field-box input + input {
 	margin-left: 0.5rem;
@@ -139,6 +158,11 @@
 .dataWrite-field-box .text-box {
 	display: flex;
 	flex-direction: row;
+	width: calc(100% - 7rem);
+}
+.dataWrite-field-box .textarea-box {
+	display: flex;
+	flex-direction: column;
 	width: calc(100% - 7rem);
 }
 
