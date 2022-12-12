@@ -1,89 +1,89 @@
 @charset "UTF-8";
 .web-common-inner {
-  max-width: 1280px;
-  margin: 0 auto;
-  display: flex;
+	max-width: 1280px;
+	margin: 0 auto;
+	display: flex;
 }
 
 .web-inner-depth {
-  max-width: 1024px;
-  margin: 0 auto;
-  display: flex;
+	max-width: 1024px;
+	margin: 0 auto;
+	display: flex;
 }
 
 /* 고딕체 - 나눔바른고딕 */
 @font-face {
-  font-family: "NG";
-  font-weight: normal;
-  src: url("/common/font/NanumBarunGothic_0.ttf") format("truetype");
+	font-family: "NG";
+	font-weight: normal;
+	src: url("/common/font/NanumBarunGothic_0.ttf") format("truetype");
 }
 @font-face {
-  font-family: "NG";
-  font-weight: bold;
-  src: url("/common/font/NanumBarunGothicBold_0.ttf") format("truetype");
+	font-family: "NG";
+	font-weight: bold;
+	src: url("/common/font/NanumBarunGothicBold_0.ttf") format("truetype");
 }
 @font-face {
-  font-family: "NG";
-  font-weight: 100;
-  src: url("/common/font/NanumBarunGothicLight_0.ttf") format("truetype");
+	font-family: "NG";
+	font-weight: 100;
+	src: url("/common/font/NanumBarunGothicLight_0.ttf") format("truetype");
 }
 @font-face {
-  font-family: "NG";
-  font-weight: 900;
-  src: url("/common/font/NanumGothicExtraBold.ttf") format("truetype");
+	font-family: "NG";
+	font-weight: 900;
+	src: url("/common/font/NanumGothicExtraBold.ttf") format("truetype");
 }
 /* 명조체 - 나눔명조 */
 @font-face {
-  font-family: "NM";
-  font-weight: normal;
-  src: url("/common/font/NanumMyeongjo.ttf") format("truetype");
+	font-family: "NM";
+	font-weight: normal;
+	src: url("/common/font/NanumMyeongjo.ttf") format("truetype");
 }
 @font-face {
-  font-family: "NM";
-  font-weight: bold;
-  src: url("/common/font/NanumMyeongjoBold.ttf") format("truetype");
+	font-family: "NM";
+	font-weight: bold;
+	src: url("/common/font/NanumMyeongjoBold.ttf") format("truetype");
 }
 @font-face {
-  font-family: "NM";
-  font-weight: 900;
-  src: url("/common/font/NanumMyeongjoExtraBold.ttf") format("truetype");
+	font-family: "NM";
+	font-weight: 900;
+	src: url("/common/font/NanumMyeongjoExtraBold.ttf") format("truetype");
 }
 /* 영문폰트 - Browallia New */
 @font-face {
-  font-family: "BN";
-  font-weight: normal;
-  src: url("/common/font/browa.ttf") format("truetype");
+	font-family: "BN";
+	font-weight: normal;
+	src: url("/common/font/browa.ttf") format("truetype");
 }
 @font-face {
-  font-family: "BN";
-  font-weight: bold;
-  src: url("/common/font/browab.ttf") format("truetype");
+	font-family: "BN";
+	font-weight: bold;
+	src: url("/common/font/browab.ttf") format("truetype");
 }
 body {
-  font-family: var(--NG);
-  font-weight: normal;
+	font-family: var(--NG);
+	font-weight: normal;
 }
 
 button {
-  cursor: pointer;
+	cursor: pointer;
 }
 
 #backgroundImg {
-  background-image: url(/common/img/back_cloud.png);
-  width: 100%;
-  height: auto;
+	background-image: url(/common/img/back_cloud.png);
+	width: 100%;
+	height: auto;
 }
 
 .round_btnStyle {
-  background-color: rgba(var(--royalblue), 1);
-  color: rgba(var(--white), 1);
-  border-radius: 25rem;
-  padding: 0.8rem;
+	background-color: rgba(var(--royalblue), 1);
+	color: rgba(var(--white), 1);
+	border-radius: 25rem;
+	padding: 0.8rem;
 }
 
 .Square_btnStyle {
-  background-color: rgba(var(--royalblue), 1);
-  color: rgba(var(--white), 1);
-  border-radius: 0.25rem;
-  padding: 0.8rem;
+	background-color: rgba(var(--royalblue), 1);
+	color: rgba(var(--white), 1);
+	border-radius: 0.25rem;
+	padding: 0.8rem;
 }
