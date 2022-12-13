@@ -1,6 +1,10 @@
 
 /*admin-list-page*/
 
+a{
+    color:rgba(var(--black), .9);
+}
+
 /*페이지 상단 이미지 및 글자 영역*/
 #admin-sub-Page {
     position: relative;
@@ -83,3 +87,56 @@
     }
 }
 
+/* 22/12/12 이주성 */
+
+//본문
+#adminContent{
+    margin-top:2rem;
+}
+
+.admin-book-item{
+    line-height:1.35;
+    display:grid;
+    grid-template-columns: 4rem 5rem .25fr 1fr .5fr;
+    grid-gap:.5rem;
+    border-top:1px solid rgba(var(--black), .9);
+    padding:.5rem .25rem;
+    > div{
+        padding:0 .5rem;
+        &:before{
+            content:'';
+            display:block;
+            width:2px;
+            height:inherit;
+            background:rgba(var(--black), .25);
+        }
+        &#adminBookImg{
+            
+        }
+        &#adminTexts{
+            overflow:hidden;
+            white-space:normal;
+            text-overflow:hidden;
+            word-break:break-all;
+            -webkit-line-clamp:5;
+            -webkit-box-orient:vertical;
+            display:-webkit-box;
+        }
+        &#adminLinks{
+            display:flex;
+            flex-direction:column;
+            a:before{
+                display:block;
+                color:rgba(var(--marineblue), 1);
+                font-weight:bold;
+            }
+            .admin-link-pro:before{
+                content:'도록 링크[전문가]';
+            }
+            .admin-link-ordinary:before{
+                margin-top:.5rem;
+                content:'도록 링크[일반인]';
+            }
+        }
+    }
+}
