@@ -92,6 +92,17 @@ a{
 //본문
 #adminContent{
     margin-top:2rem;
+    .web-common-inner{
+		flex-direction:column;
+        .adm-go-home-button{
+			margin-bottom:.5rem;
+            display:flex;
+			align-items:center;
+            svg{
+                margin-right:.25rem;
+            }
+		}
+	}
 }
 
 .admin-book-item{

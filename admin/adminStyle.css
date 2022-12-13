@@ -86,6 +86,17 @@ a {
 #adminContent {
   margin-top: 2rem;
 }
+#adminContent .web-common-inner {
+  flex-direction: column;
+}
+#adminContent .web-common-inner .adm-go-home-button {
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+#adminContent .web-common-inner .adm-go-home-button svg {
+  margin-right: 0.25rem;
+}
 
 .admin-book-item {
   line-height: 1.35;
