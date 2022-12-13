@@ -102,7 +102,7 @@ a{
     border-top:1px solid rgba(var(--black), .9);
     padding:.5rem .25rem;
     > div{
-        padding:0 .5rem;
+        padding:0 .25rem;
         &:before{
             content:'';
             display:block;
@@ -110,8 +110,30 @@ a{
             height:inherit;
             background:rgba(var(--black), .25);
         }
+        &#adminBookId{
+            display: flex;
+            align-items: center;
+        }
         &#adminBookImg{
-            
+            padding:0;
+        }
+        &#adminBookName{
+            display:flex;
+            flex-direction:column;
+            &:before{
+                display:none;
+            }
+            h3{
+                color:rgba(var(--royalblue),1);
+            }
+            hr{
+                content:'';
+                display:block;
+                width:1rem;
+                height:1px;
+                background:rgba(var(--royalblue),.5);
+                margin:.25rem 0 .35rem;
+            }
         }
         &#adminTexts{
             overflow:hidden;
@@ -121,6 +143,11 @@ a{
             -webkit-line-clamp:5;
             -webkit-box-orient:vertical;
             display:-webkit-box;
+            background: rgba(var(--black), 0.1);
+            padding:.5rem;
+            p{
+                line-height:1.5;
+            }
         }
         &#adminLinks{
             display:flex;
@@ -132,10 +159,12 @@ a{
             }
             .admin-link-pro:before{
                 content:'도록 링크[전문가]';
+                margin-bottom:.25rem;
             }
             .admin-link-ordinary:before{
                 margin-top:.5rem;
                 content:'도록 링크[일반인]';
+                margin-bottom:.25rem;
             }
         }
     }

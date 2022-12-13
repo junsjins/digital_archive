@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="kr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="common/css/reset.css">
+    <link rel="stylesheet" href="common/css/default.css">
+    <link rel="stylesheet" href="module/css/dropDown.css"><!--dropDowm-->
+    <link rel="stylesheet" href="common/css/variables.css"><!--variables-->
+
+    <link rel="stylesheet" href="admin/adminStyle.css">
+
+    <script src="/common/js/jquery-3.6.0.js"></script>
+    <script src="/module/js/extraDropDown.js" defer></script><!--dropDowm-->
+    <script src="/admin/js/adminWritePage.js" defer></script>
+
+
+
+    <title>도록</title>
+</head>
+
+<body>
+    <div id="wrap">
+           <!--서브페이지 탭 + 이미지-->
+        <div id="admin-sub-Page">
+        <div id="sub-page-box">
+            <img src="https://picsum.photos/1920/1080?random=1" alt="" data-sub-image="">
+            <div data-sub-text="">
+                <h4 data-sub-title="">조선통신사 디지털 아카이브 자료등록 관리자페이지</h4>
+                <hr class="hf">
+            </div>
+        </div>
+        <ul id="subNav">
+            <li class="sub-page-routes current" onclick="location.href='adminBook.html'">도록</li>
+            <li class="sub-page-routes " onclick="location.href='adminData.html'">소장 자료</li>
+        </ul>
+        <section id="contentView" data-sub-route="community" data-sub-route-current="도록"></section>
+    </div>
+
+    <section id="adminContent">
+        <article class="web-common-inner">
+            <div class="admin-book-item">
+                <div id="adminBookId">12345</div>
+                <div id="adminBookImg">
+                    <img src="/common/img/coll-item-temp01.jpg" alt="">
+                </div>
+                <div id="adminBookName">
+                    <h3>K-I-1 통신사등록</h3>
+                    <hr>
+                    <p>국보 24호</p>
+                </div>
+                <div id="adminTexts">
+                    <p>예조 책자 종이에 묵서 세로X가로 서울대학교 규장각 소장 1641년(인조19)부터 
+                        1811년(순조11)까지 통신사행에 관련한 공문서를 조선의 예조 전객사에서 등사하여 유형별로 묶은 것이다. 여기에는 통신사 왕래의 시작과 마무리에 걸쳐 작성된 문서가 거의 망라되어 있다. 주요 내용은 일본의 통신사
+                    </p>
+                </div>
+                <div id="adminLinks">
+                    <a href="#" class="admin-link-pro">http://archive.tongsinsa.com/data/ko-kr/art_catalogue/K-I-1/#p=1</a>
+                    <a href="#" class="admin-link-ordinary">http://archive.tongsinsa.com/data/ko-kr/art_catalogue/K-I-1/#p=2</a>
+                </div>
+            </div>
+            
+        </article>
+    </section>
+</div>
+</body>
+
+</html>
