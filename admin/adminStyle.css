@@ -98,6 +98,7 @@ a {
   margin-right: 0.25rem;
 }
 
+/** 관리자 도록 리스트페이지 */
 .admin-book-item {
   line-height: 1.35;
   display: grid;
@@ -172,6 +173,133 @@ a {
   margin-top: 0.5rem;
   content: "도록 링크[일반인]";
   margin-bottom: 0.25rem;
+}
+
+/* 관리자 소장자료 리스트페이지 */
+.admin-data-item {
+  display: flex;
+  flex-direction: column;
+}
+.admin-data-item .admin-data-header {
+  display: grid;
+  grid-template-columns: 7rem 0.5fr 1fr;
+  padding: 0.5rem;
+  text-align: center;
+  background: rgba(var(--royalblue), 0.75);
+  color: rgba(var(--white), 1);
+}
+.admin-data-item .admin-data-table {
+  cursor: pointer;
+  line-height: 1.35;
+  display: grid;
+  grid-template-columns: 7rem 0.5fr 1fr;
+  padding: 0 0.25rem;
+  border-bottom: 1px solid rgba(var(--black), 0.75);
+}
+.admin-data-item #adminDataId {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+}
+.admin-data-item #adminDataImg {
+  word-break: break-word;
+  display: grid;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.5rem;
+  grid-template-columns: 6rem 1fr;
+}
+.admin-data-item #adminDataImg > img {
+  width: 6rem;
+  margin-right: 0.5rem;
+}
+.admin-data-item #adminDataImg > div {
+  display: flex;
+  flex-direction: column;
+  margin-left: 0.5rem;
+}
+.admin-data-item #adminDataImg a {
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+  word-break: keep-all;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  white-space: nowrap;
+}
+.admin-data-item .admin-data-detail {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 0.5rem;
+}
+.admin-data-item .admin-data-detail h3 {
+  width: 100%;
+  /* line-height: 1; */
+  font-size: var(--font22);
+  border-bottom: 1px solid rgba(var(--royalblue), 0.25);
+  display: flex;
+  align-items: center;
+  padding: 0.25rem 0;
+}
+.admin-data-item .admin-data-detail > div {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.admin-data-item .admin-data-detail > div > p {
+  display: flex;
+  line-height: 1.85;
+}
+.admin-data-item .admin-data-detail > div#adminDataName {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.admin-data-item .admin-data-detail > div#adminDataName h3 {
+  color: rgba(var(--royalblue), 1);
+}
+.admin-data-item .admin-data-detail > div#adminDataName hr {
+  content: "";
+  display: block;
+  width: 1rem;
+  height: 1px;
+  background: rgba(var(--royalblue), 0.5);
+  margin: 0.25rem 0 0.35rem;
+}
+.admin-data-item .admin-data-detail > div#adminTexts {
+  justify-content: flex-end;
+}
+.admin-data-item .admin-data-detail > div#adminLinks {
+  display: flex;
+  flex-direction: column;
+}
+.admin-data-item .admin-data-detail > div#adminLinks a:before {
+  display: block;
+  color: rgba(var(--marineblue), 1);
+  font-weight: bold;
+}
+
+.admin-list-subtitle {
+  color: rgba(var(--royalblue), 0.5);
+  font-weight: normal;
+  font-size: var(--font14);
+  display: inline-block;
+  width: 5rem;
+}
+
+#adminWriteBtn {
+  display: flex;
+  margin-top: 1rem;
+}
+#adminWriteBtn button {
+  display: flex;
+  gap: 0.35rem;
+  margin-left: auto;
+  padding: 0.45rem 0.75rem 0.35rem 0.5rem;
+  background: rgba(var(--royalblue), 0.75);
+  border-radius: 0.5rem;
+  color: rgba(var(--white), 1);
 }
 
 #dataWrite-page-inner {

@@ -89,6 +89,8 @@ a{
 
 /* 22/12/12 이주성 */
 
+
+
 //본문
 #adminContent{
     margin-top:2rem;
@@ -104,6 +106,7 @@ a{
 		}
 	}
 }
+/** 관리자 도록 리스트페이지 */
 
 .admin-book-item{
     line-height:1.35;
@@ -178,5 +181,141 @@ a{
                 margin-bottom:.25rem;
             }
         }
+    }
+}
+
+
+/* 관리자 소장자료 리스트페이지 */
+
+.admin-data-item{
+        display:flex;
+        flex-direction: column;
+    .admin-data-header{
+        display:grid;
+        grid-template-columns: 7rem .5fr 1fr;
+        padding:.5rem;
+        text-align:center;
+        background: rgba(var(--royalblue),.75);
+        color:rgba(var(--white), 1);
+    }
+    .admin-data-table{
+        cursor:pointer;
+        line-height:1.35;
+        display:grid;
+        grid-template-columns: 7rem .5fr 1fr;
+        padding:0 .25rem;
+        border-bottom: 1px solid rgba(var(--black),.75);
+    }
+    #adminDataId{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding:.5rem;
+    }
+    #adminDataImg{
+        word-break: break-word;
+        display:grid;
+        flex-direction:column;
+        align-items:center;
+        gap:1rem;
+        padding:.5rem;
+        grid-template-columns: 6rem 1fr;
+        > img{
+            width:6rem;
+            margin-right:.5rem;
+        }
+        > div{
+            display:flex;
+            flex-direction:column;
+            margin-left: 0.5rem;
+            }
+        a{
+            overflow:hidden;
+            -webkit-line-clamp: 2;
+            word-break: keep-all;
+            text-overflow:ellipsis;
+            -webkit-box-orient: vertical;
+            white-space:nowrap;
+        }
+    }
+    .admin-data-detail{
+        display:flex;
+        flex-wrap:wrap;
+        padding: 0 0.5rem;
+        h3{
+            width: 100%;
+    /* line-height: 1; */
+    font-size: var(--font22);
+    border-bottom: 1px solid rgba(var(--royalblue),.25);
+    display: flex;
+    align-items: center;
+    padding: 0.25rem 0;
+        }
+        > div{
+            width: 50%;
+            display:flex;
+            flex-direction:column;
+
+            > p{
+                display:flex;
+                line-height:1.85;
+            }
+         
+            
+            &#adminDataName{
+                display:flex;
+                flex-direction:column;            
+                justify-content: flex-end;
+                h3{
+                    color:rgba(var(--royalblue),1);
+                }
+                hr{
+                    content:'';
+                    display:block;
+                    width:1rem;
+                    height:1px;
+                    background:rgba(var(--royalblue),.5);
+                    margin:.25rem 0 .35rem;
+                }
+            }
+            &#adminTexts{
+                justify-content: flex-end;
+
+            }
+            &#adminLinks{
+                display:flex;
+                flex-direction:column;
+                a:before{
+                    display:block;
+                    color:rgba(var(--marineblue), 1);
+                    font-weight:bold;
+                }
+            
+            }
+        }
+    }
+    
+}
+
+
+.admin-list-subtitle{
+    color:rgba(var(--royalblue),.5);
+    font-weight:normal;
+    font-size:var(--font14);
+    display:inline-block;
+    width:5rem;
+}
+
+#adminWriteBtn{
+    display:flex;
+    margin-top:1rem;
+    button{
+        display:flex;
+        gap:.35rem;
+        margin-left:auto;
+        padding:0.45rem 0.75rem .35rem .5rem;
+        background:rgba(var(--royalblue),.75);
+        border-radius:.5rem;
+        color:rgba(var(--white),1);
     }
 }
